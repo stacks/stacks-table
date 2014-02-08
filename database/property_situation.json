@@ -1,0 +1,20 @@
+{
+  "arbitrary base change" :
+    [
+      [ "closed immersion", "01JY" ],
+      [ "open immersion", "01JY" ],
+      [ "flat", "01U9" ]
+    ],
+  "composition" :
+    [
+      [ "closed immersion", "02V0" ],
+      [ "open immersion", "02V0" ],
+      [ "flat", "01U7" ]
+    ],
+  "fpqc local" :
+    [
+      [ "closed immersion", "02L6" ],
+      [ "open immersion", "02L3" ],
+      [ "flat", "02L2" ]
+    ]
+}
