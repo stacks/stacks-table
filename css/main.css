@@ -1,0 +1,15 @@
+table {
+}
+
+th {
+  padding-right: 1em;
+}
+
+td {
+  text-align: center;
+}
+
+th a,
+td a {
+  text-decoration: none;
+}
