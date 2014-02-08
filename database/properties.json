@@ -1,5 +1,6 @@
 [
-  [ "closed immersion", "0000" ],
-  [ "open immersion", "0000" ],
-  [ "flat", "0000" ]
+  [ "closed immersion", "01IO" ],
+  [ "open immersion", "01IO" ],
+  [ "flat", "01U3" ],
+  [ "quasi-separated", "01KK" ]
 ]
