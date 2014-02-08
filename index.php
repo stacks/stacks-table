@@ -16,10 +16,52 @@ catch(PDOException $e) {
 <html>
 <head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true,
+    },
+    "HTML-CSS": { availableFonts: ["TeX"], webFont: "Gyre-Pagella" },
+    displayAlign: "left"
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <script type="text/javascript">
+// keep track of the location of the mouse and change the position of the preview
+$(document).mousemove (function(e) {
+  $("div.preview").css({"top": (20 + e.pageY) + "px", "left": (20 + e.pageX) + "px"});
+});
+
+// toggle the tag preview for the definition of a concept
+function toggleTagView() {
+  var tag = $(this).data("tag");
+
+  // the preview doesn't exist yet, hence we create it
+  if ($("div#preview-" + tag).length == 0) {
+    // create the element
+    $("body").append($("<div class='preview' id='preview-" + tag + "'></div>"));
+    // load the HTML from the proxy script
+    $("div#preview-" + tag).load("php/tag.php?tag=" + tag, function() {
+      // render math once the text has been loaded
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview-" + tag]);
+    });
+  }
+  // otherwise we can just toggle its visibility
+  else
+    $("div#preview-" + tag).toggle();
+}
+
+$(document).ready(function() {
+  // hovering over a property shows its definition
+  $("th[data-tag]").hover(toggleTagView);
+});
 </script>
 
 </head>

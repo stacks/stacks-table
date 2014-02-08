@@ -13,3 +13,7 @@ th a,
 td a {
   text-decoration: none;
 }
+
+div.preview {
+  position: absolute;
+}
