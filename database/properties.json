@@ -1,6 +1,6 @@
-[
-  [ "closed immersion", "01IO" ],
-  [ "open immersion", "01IO" ],
-  [ "flat", "01U3" ],
-  [ "quasi-separated", "01KK" ]
-]
+{
+  "closed immersion" : { "tag" : "01IO" },
+  "open immersion" : { "tag" :  "01IO" },
+  "flat" : { "tag" : "01U3" },
+  "quasi-separated" : { "tag" : "01KK" }
+}

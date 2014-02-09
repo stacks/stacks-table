@@ -1,63 +1,72 @@
 import json, sqlite3
 
+# TODO write code to check whether the tag has been changed
+
+prefix = "morphism-properties-preservation"
+database = "stacks.sqlite"
+
+rowsFile = "properties.json"
+columnsFile = "preservation.json"
+relationsFile = "properties-preservation.json"
+
 # close the connection
 def close(connection):
   connection.commit()
 
 # open the connection
 def connect():
-  connection = sqlite3.connect("properties.sqlite")
+  connection = sqlite3.connect(database)
 
   return (connection, connection.cursor())
 
-# create a property in the database
-def createProperty(name, tag):
-  assert not propertyExists(name)
+# create a row header in the database
+def createRow(name):
+  assert not rowExists(name)
 
-  print "Creating the property named", name
-
-  try:
-    query = "INSERT INTO properties (name, tag) VALUES (?, ?)"
-    cursor.execute(query, (name, tag))
-
-  except sqlite3.Error, e:
-    print "An error occurred:", e.args[0]
-
-# create a relation in the database
-def createRelation(propertyName, situationName, tag):
-  assert not relationExists(propertyName, situationName)
-
-  print "Creating a relation between the property", propertyName, "and the situation", situationName
+  print "Creating the row header", name
 
   try:
-    propertyID = getPropertyByName(propertyName)[0]
-    situationID = getSituationByName(situationName)[0]
-
-    query = "INSERT INTO property_situation (property, situation, tag) VALUES (?, ?, ?)"
-    cursor.execute(query, (propertyID, situationID, tag))
-
-  except sqlite3.Error, e:
-    print "An error occurred:", e.args[0]
-
-# create a situation in the database
-def createSituation(name):
-  assert not situationExists(name)
-
-  print "Creating the situation named", name
-
-  try:
-    query = "INSERT INTO situations (name) VALUES (?)"
+    query = "INSERT INTO [" + prefix + "-rows] (name) VALUES (?)"
     cursor.execute(query, (name,))
 
   except sqlite3.Error, e:
     print "An error occurred:", e.args[0]
 
-# get the property with a given name
-def getPropertyByName(name):
-  assert propertyExists(name)
+# create a relation in the database
+def createRelation(rowName, columnName):
+  assert not relationExists(rowName, columnName)
+
+  print "Creating a relation between the row", rowName, "and the column", columnName
 
   try:
-    query = "SELECT id, name, tag FROM properties WHERE name = ?"
+    rowID = getRowByName(rowName)[0]
+    columnID = getColumnByName(columnName)[0]
+
+    query = "INSERT INTO [" + prefix + "-relations] (row, column) VALUES (?, ?)"
+    cursor.execute(query, (rowID, columnID))
+
+  except sqlite3.Error, e:
+    print "An error occurred:", e.args[0]
+
+# create a column in the database
+def createColumn(name):
+  assert not columnExists(name)
+
+  print "Creating the column named", name
+
+  try:
+    query = "INSERT INTO [" + prefix + "-columns] (name) VALUES (?)"
+    cursor.execute(query, (name,))
+
+  except sqlite3.Error, e:
+    print "An error occurred:", e.args[0]
+
+# get the row with a given name
+def getRowByName(name):
+  assert rowExists(name)
+
+  try:
+    query = "SELECT * FROM [" + prefix + "-rows] WHERE name = ?"
     result = connection.execute(query, (name,))
 
     return result.fetchone()
@@ -67,12 +76,12 @@ def getPropertyByName(name):
 
   return False
 
-# get the situation with a given name
-def getSituationByName(name):
-  assert situationExists(name)
+# get the column with a given name
+def getColumnByName(name):
+  assert columnExists(name)
 
   try:
-    query = "SELECT id, name FROM situations WHERE name = ?"
+    query = "SELECT * FROM [" + prefix + "-columns] WHERE name = ?"
     result = connection.execute(query, (name,))
 
     return result.fetchone()
@@ -82,16 +91,16 @@ def getSituationByName(name):
 
   return False
 
-# get the relationship between a property and a situation
-def getRelation(propertyName, situationName):
-  assert relationExists(propertyName, situationName)
+# get the relationship between a row and a column
+def getRelation(rowName, columnName):
+  assert relationExists(rowName, columnName)
 
   try:
-    propertyID = getPropertyByName(propertyName)[0]
-    situationID = getSituationByName(situationName)[0]
+    rowID = getRowByName(rowName)[0]
+    columnID = getColumnByName(columnName)[0]
 
-    query = "SELECT property, situation, tag FROM property_situation WHERE property = ? AND situation = ?"
-    result = connection.execute(query, (propertyID, situationID))
+    query = "SELECT * FROM [" + prefix + "-relations] WHERE property = ? AND situation = ?"
+    result = connection.execute(query, (rowID, columnID))
 
     return result.fetchone()
 
@@ -100,12 +109,12 @@ def getRelation(propertyName, situationName):
 
   return False
 
-# get the situation with a given name
-def getSituation(name):
-  assert situationExists(name)
+# get the column with a given name
+def getColumn(name):
+  assert columnExists(name)
 
   try:
-    query = "SELECT name FROM situations WHERE name = ?"
+    query = "SELECT * FROM [" + prefix + "-columns] WHERE name = ?"
     result = connection.execute(query, (name,))
 
     return result.fetchone()
@@ -115,10 +124,10 @@ def getSituation(name):
 
   return False
 
-# check whether a property exists in the database
-def propertyExists(name):
+# check whether a row exists in the database
+def rowExists(name):
   try:
-    query = "SELECT COUNT(*) FROM properties WHERE name = ?"
+    query = "SELECT COUNT(*) FROM [" + prefix + "-rows] WHERE name = ?"
     result = connection.execute(query, (name,))
 
     return result.fetchone()[0]
@@ -128,10 +137,10 @@ def propertyExists(name):
 
   return False
 
-# check whether a situation exists in the database
-def situationExists(name):
+# check whether a column exists in the database
+def columnExists(name):
   try:
-    query = "SELECT COUNT(*) FROM situations WHERE name = ?"
+    query = "SELECT COUNT(*) FROM [" + prefix + "-columns] WHERE name = ?"
     result = connection.execute(query, (name,))
 
     return result.fetchone()[0]
@@ -142,16 +151,16 @@ def situationExists(name):
   return False
 
 # check whether a relation exists in the database
-def relationExists(propertyName, situationName):
-  assert propertyExists(propertyName)
-  assert situationExists(situationName)
+def relationExists(rowName, columnName):
+  assert rowExists(rowName)
+  assert columnExists(columnName)
 
-  propertyID = getPropertyByName(propertyName)[0]
-  situationID = getSituationByName(situationName)[0]
+  rowID = getRowByName(rowName)[0]
+  columnID = getColumnByName(columnName)[0]
 
   try:
-    query = "SELECT COUNT(*) FROM property_situation WHERE property = ? AND situation = ?"
-    result = connection.execute(query, (propertyID, situationID))
+    query = "SELECT COUNT(*) FROM [" + prefix + "-relations] WHERE row = ? AND column = ?"
+    result = connection.execute(query, (rowID, columnID))
 
     return result.fetchone()[0]
 
@@ -161,42 +170,43 @@ def relationExists(propertyName, situationName):
   return False
   
 
-# import properties from the JSON file
-def importProperties():
-  f = open("properties.json")
-  properties = json.load(f)
+# import rows from the JSON file
+def importRows():
+  f = open(rowsFile)
+  rows = json.load(f)
 
-  for (name, tag) in properties:
-    if not propertyExists(name):
-      createProperty(name, tag)
+  # TODO we should use named fields etc
+  for name in rows.keys():
+    if not rowExists(name):
+      createRow(name)
 
-# import property-situation relations from the JSON file
+# import rows from the JSON file
+def importColumns():
+  f = open(columnsFile)
+  columns = json.load(f)
+
+  # TODO we should use named fields etc
+  for name in columns.keys():
+    if not columnExists(name):
+      createColumn(name)
+
+# import relations from the JSON file
 def importRelations():
-  f = open("property_situation.json")
+  f = open(relationsFile)
   relations = json.load(f)
 
-  for situation in relations:
-    for relation in relations[situation]:
-      if not relationExists(relation[0], situation):
-        createRelation(relation[0], situation, relation[1])
+  for relation in relations:
+    if not relationExists(relation["row"], relation["column"]):
+      createRelation(relation["row"], relation["column"])
 
-# import situations from the JSON file
-def importSituations():
-  f = open("property_situation.json")
-  situations = json.load(f).keys()
-
-  for name in situations:
-    if not situationExists(name):
-      createSituation(name)
-
-
+    # TODO update the other fields
 
 # actual execution code
 global connection
 (connection, cursor) = connect()
 
-importProperties()
-importSituations()
+#importRows()
+#importColumns()
 importRelations()
 
 close(connection)
