@@ -153,12 +153,20 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
 
   protected function outputRelation($relation) {
     // TODO handle the different scenarios: false (link to example, if present), true (link to tag, if present), unknown
-    return "<td></td>";
+    $output = "";
+
+    if (empty($relation)) // empty string implies that there is no relation in the database
+      $output .= "<td></td>";
+    else
+      $output .= "<td data-tag='" . $relation["tag"] . "'><a href='http://stacks.math.columbia.edu/tag/" . $relation["tag"] . "'>&#x2713;</a></td>";
+      // TODO this could be moved to some external function, as I imagine that this format will be (often) reused
+
+    return $output;
   }
 
   protected function outputRowHeader($row) {
     // TODO this could be moved to some external function, as I imagine that this format will be (often) reused
-    return "<th><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
+    return "<th data-tag='" . $row["tag"] . "'><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
   }
 }
 
@@ -167,7 +175,7 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
  */
 class StacksLinks {
   public static function tag($tag) {
-    return "http://stacks.math.columbia.edu/tag/ " . $tag;
+    return "http://stacks.math.columbia.edu/tag/" . $tag;
   }
 }
 

@@ -16,7 +16,6 @@ catch(PDOException $e) {
   exit();
 }
 
-$table = new MorphismPropertiesPreservationTable($database);
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,41 +74,8 @@ $(document).ready(function() {
 <body>
 
 <h1>Stability of properties</h1>
-
-<table>
-<thead>
-<tr>
-  <th></th>
 <?php
-//$situations = getSituations();
-//foreach ($situations as $situation)
-//  print "<th>" . $situation["name"] . "</th>";
-//?>
-</tr>
-</thead>
-
-<tbody>
-<?php
-//$properties = getProperties();
-//$relations = getRelations();
-//foreach ($properties as $property) {
-//  print "<tr>";
-//  print "<th data-tag='" . $property["tag"] . "'><a href='http://stacks.math.columbia.edu/tag/" . $property["tag"] . "'>" . $property["name"] . "</a></th>";
-//
-//  foreach ($situations as $situation) {
-//    if ($relations[$property["name"]][$situation["name"]] == "")
-//      print "<td></td>";
-//    else
-//      print "<td data-tag='" . $relations[$property["name"]][$situation["name"]] . "'><a href='http://stacks.math.columbia.edu/tag/" . $relations[$property["name"]][$situation["name"]] . "'>&#x2713;</a></td>";
-//  }
-//
-//  print "</tr>";
-//}
-?>
-</tbody>
-</table>
-<hr>
-<?php
+$table = new MorphismPropertiesPreservationTable($database);
 print $table->outputTable();
 ?>
 </body>
