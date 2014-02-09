@@ -37,6 +37,7 @@ catch(PDOException $e) {
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="http://stacks.math.columbia.edu/css/tag.css">
 
 <script type="text/javascript">
 // keep track of the location of the mouse and change the position of the preview
@@ -52,8 +53,10 @@ function toggleTagView() {
   if ($("div#preview-" + tag).length == 0) {
     // create the element
     $("body").append($("<div class='preview' id='preview-" + tag + "'></div>"));
+    // create the blockquote containing the tag
+    $("div#preview-" + tag).append($("<blockquote class='rendered'></blockquote>"));
     // load the HTML from the proxy script
-    $("div#preview-" + tag).load("php/tag.php?tag=" + tag, function() {
+    $("div#preview-" + tag + " blockquote").load("php/tag.php?tag=" + tag, function() {
       // render math once the text has been loaded
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview-" + tag]);
     });

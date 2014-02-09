@@ -16,4 +16,9 @@ td a {
 
 div.preview {
   position: absolute;
+  padding: 4px;
+  border: 1px solid #d9d8d1;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .8);
 }
