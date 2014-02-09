@@ -36,12 +36,12 @@ class ComparisonTable {
     // body of the table
     $output .= "<tbody>";
 
-    $rows = $this->getColumnHeaders();
+    $rows = $this->getRowHeaders();
     $relations = $this->getRelations();
     foreach ($rows as $row) {
       $output .= "<tr>";
       // the row headers
-      $output .= $this->outputRowHeader($column);
+      $output .= $this->outputRowHeader($row);
 
       foreach ($columns as $column) {
         // the main table cells
@@ -79,13 +79,14 @@ class ComparisonTable {
   // output a row header
   protected function outputRowHeader($row) {
     // this is the default, no frills
+    print "nooo";
     return "<th>" . $row["name"] . "</th>";
   }
 
   // get the elements in the column headers
   private function getColumnHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT name FROM situations");
+    $sql = $this->database->prepare("SELECT name FROM [" . $this->getTableName("columns") . "]");
     if ($sql->execute())
       return $sql->fetchAll();
 
@@ -95,7 +96,7 @@ class ComparisonTable {
   // get the elements in the row headers
   private function getRowHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT * FROM properties");
+    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "]");
     if ($sql->execute())
       return $sql->fetchAll();
 
@@ -109,17 +110,17 @@ class ComparisonTable {
 
     $relations = array();
     // initialise the table with empty strings (= no relation)
-    foreach ($rows as $rows) {
+    foreach ($rows as $row) {
       foreach ($columns as $column) {
         $relations[$row["name"]][$column["name"]] = "";
       }
     }
 
     $query = "";
-    $query .= "SELECT " . $this->getTableName("rows") . ".name, " . $this->getTableName("columns") . ".name, " . $this->getTableName("relations") . ".* ";
-    $query .= "FROM " . $this->getTableName("rows") . ", " . $this->getTableName("columns") . ", " . $this->getTableName("relations") . " ";
-    $query .= "WHERE " . $this->getTableName("rows") . ".id = " . $this->getTableName("relations") . ".row ";
-    $query .= "AND " . $this->getTableName("columns") . ".id = " . $this->getTableName("relations") . ".column";
+    $query .= "SELECT [" . $this->getTableName("rows") . "].name, [" . $this->getTableName("columns") . "].name, [" . $this->getTableName("relations") . "].* ";
+    $query .= "FROM [" . $this->getTableName("rows") . "], [" . $this->getTableName("columns") . "], [" . $this->getTableName("relations") . "] ";
+    $query .= "WHERE [" . $this->getTableName("rows") . "].id = [" . $this->getTableName("relations") . "].row ";
+    $query .= "AND [" . $this->getTableName("columns") . "].id = [" . $this->getTableName("relations") . "].column";
 
     $sql = $this->database->prepare($query);
     if ($sql->execute()) {
@@ -139,18 +140,15 @@ class ComparisonTable {
   }
 }
 
-// config for the table
-$config = array("tableName" => "properties-morphism-preservation");
-
 /**
  * Instance of a comparison table
  *
  * This table indicates which properties of morphisms are preserved by which operations
  */
-class PropertiesMorphismPreservationTable extends ComparisonTable {
+class MorphismPropertiesPreservationTable extends ComparisonTable {
   public function __construct($database) {
     global $config;
-    $this->__construct($database, $config["tableName"]);
+    parent::__construct($database, "morphism-properties-preservation");
   }
 
   protected function outputRelation($relation) {
