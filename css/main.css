@@ -1,8 +1,19 @@
 table {
+  border-collapse: collapse;
 }
 
-th {
-  padding-right: 1em;
+thead th, thead td {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  padding: .3em .5em;
+}
+
+tbody tr:last-child th, tbody tr:last-child td {
+  border-bottom: 2px solid black;
+}
+
+tbody th {
+  padding: .2em 0;
 }
 
 td {
