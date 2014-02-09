@@ -13,9 +13,10 @@ def execute(filename):
   query = query.replace("prefix", prefix)
 
   cursor = connection.cursor()
-  cursor.execute(query)
+  cursor.executescript(query)
 
 tables = ["rows.sql", "columns.sql", "relations.sql"]
+tables = tables + [prefix + "-fields.sql"] # this file will contain the extra fields
 
 # TODO check existence of the tables, not of the .sqlite file
 #if os.path.isfile("properties.sqlite"):

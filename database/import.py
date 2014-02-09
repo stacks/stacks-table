@@ -169,26 +169,50 @@ def relationExists(rowName, columnName):
 
   return False
   
+# update a field in one of the columns
+def updateField(table, key, field, value):
+  assert table in ["columns", "relations", "rows"]
+
+  if table == "relations":
+    assert relationExists(key[0], key[1])
+
+    rowID = getRowByName(key[0])[0]
+    columnID = getColumnByName(key[1])[0]
+
+    query = "UPDATE [" + prefix + "-relations] SET " + field + "='" + value + "' WHERE row = ? AND column = ?"
+    connection.execute(query, (rowID, columnID))
+  else:
+    if table == "columns":
+      assert columnExists(key)
+    else:
+      assert rowExists(key)
+
+    query = "UPDATE [" + prefix + "-" + table + "] SET " + field + "='" + value + "' WHERE name = ?"
+    connection.execute(query, (key,))
 
 # import rows from the JSON file
 def importRows():
   f = open(rowsFile)
   rows = json.load(f)
 
-  # TODO we should use named fields etc
   for name in rows.keys():
     if not rowExists(name):
       createRow(name)
+
+    for field in rows[name].keys():
+      updateField("rows", name, field, rows[name][field])
 
 # import rows from the JSON file
 def importColumns():
   f = open(columnsFile)
   columns = json.load(f)
 
-  # TODO we should use named fields etc
   for name in columns.keys():
     if not columnExists(name):
       createColumn(name)
+
+    for field in columns[name].keys():
+      updateField("columns", name, field, columns[name][field])
 
 # import relations from the JSON file
 def importRelations():
@@ -199,14 +223,16 @@ def importRelations():
     if not relationExists(relation["row"], relation["column"]):
       createRelation(relation["row"], relation["column"])
 
-    # TODO update the other fields
+    for field in relation.keys():
+      if field not in ["column", "row"]:
+        updateField("relations", (relation["row"], relation["column"]), field, relation[field])
 
 # actual execution code
 global connection
 (connection, cursor) = connect()
 
-#importRows()
-#importColumns()
+importRows()
+importColumns()
 importRelations()
 
 close(connection)
