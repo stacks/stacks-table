@@ -5,10 +5,6 @@ import json, sqlite3
 prefix = "morphism-properties-preservation"
 database = "stacks.sqlite"
 
-rowsFile = "properties.json"
-columnsFile = "preservation.json"
-relationsFile = "properties-preservation.json"
-
 # close the connection
 def close(connection):
   connection.commit()
@@ -192,7 +188,7 @@ def updateField(table, key, field, value):
 
 # import rows from the JSON file
 def importRows():
-  f = open(rowsFile)
+  f = open(prefix + "/rows.json")
   rows = json.load(f)
 
   for name in rows.keys():
@@ -204,7 +200,7 @@ def importRows():
 
 # import rows from the JSON file
 def importColumns():
-  f = open(columnsFile)
+  f = open(prefix + "/columns.json")
   columns = json.load(f)
 
   for name in columns.keys():
@@ -216,7 +212,7 @@ def importColumns():
 
 # import relations from the JSON file
 def importRelations():
-  f = open(relationsFile)
+  f = open(prefix + "/relations.json")
   relations = json.load(f)
 
   for relation in relations:
