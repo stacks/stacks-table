@@ -1,5 +1,9 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 include_once("php/properties.php");
+include_once("table.php");
 
 // initialize the global database object
 try {
@@ -11,6 +15,8 @@ catch(PDOException $e) {
   // if there is actually a persistent error: add output code here to check it
   exit();
 }
+
+$table = new ComparisonTable($database, "morphism-properties-preservation");
 ?>
 <!DOCTYPE html>
 <html>
@@ -102,6 +108,10 @@ foreach ($properties as $property) {
 ?>
 </tbody>
 </table>
+<hr>
+<?php
+$table->outputTable();
+?>
 </body>
 </html>
 
