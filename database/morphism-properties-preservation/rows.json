@@ -2,5 +2,6 @@
   "closed immersion" : { "tag" : "01IO" },
   "open immersion" : { "tag" :  "01IO" },
   "flat" : { "tag" : "01U3" },
-  "quasi-separated" : { "tag" : "01KK" }
+  "quasi-separated" : { "tag" : "01KK" },
+  "projective" : { "tag" : "01W8" }
 }

@@ -2,6 +2,66 @@
   {
     "row" : "closed immersion",
     "column" : "arbitrary base change",
+    "tag" : "01JY"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "arbitrary base change",
+    "tag" : "01JY"
+  },
+  {
+    "row" : "flat",
+    "column" : "arbitrary base change",
     "tag" : "01U9"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "arbitrary base change",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "projective",
+    "column" : "arbitrary base change",
+    "tag" : "02V6"
+  },
+  {
+    "row" : "closed immersion",
+    "column" : "composition",
+    "tag" : "02V0"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "composition",
+    "tag" : "02V0"
+  },
+  {
+    "row" : "flat",
+    "column" : "composition",
+    "tag" : "01U7"
+  },
+  {
+    "row" : "closed immersion",
+    "column" : "fpqc local",
+    "tag" : "02L6"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "fpqc local",
+    "tag" : "02L3"
+  },
+  {
+    "row" : "flat",
+    "column" : "fpqc local",
+    "tag" : "02L2"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "fpqc local",
+    "tag" : "02KU"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "composition",
+    "tag" : "01KU"
   }
 ]
