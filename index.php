@@ -76,9 +76,14 @@ $(document).ready(function() {
 
 <body>
 
-<h1>Stability of properties</h1>
+<h1>Stability of properties of morphisms</h1>
 <?php
 $table = new MorphismPropertiesPreservationTable($database);
+print $table->outputTable();
+?>
+<h1>Stability of properties of objects in derived categories</h1>
+<?php
+$table = new ComparisonTable($database, "derived-categories-preservation");
 print $table->outputTable();
 ?>
 </body>

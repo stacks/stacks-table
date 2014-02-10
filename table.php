@@ -79,7 +79,6 @@ class ComparisonTable {
   // output a row header
   protected function outputRowHeader($row) {
     // this is the default, no frills
-    print "nooo";
     return "<th>" . $row["name"] . "</th>";
   }
 
