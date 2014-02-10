@@ -2,7 +2,8 @@ import json, sqlite3
 
 # TODO write code to check whether the tag has been changed
 
-prefix = "morphism-properties-preservation"
+#prefix = "morphism-properties-preservation"
+prefix = "derived-categories-preservation"
 database = "stacks.sqlite"
 
 # close the connection
