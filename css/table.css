@@ -20,6 +20,10 @@ tbody th {
   padding: .2em 0;
 }
 
+tbody td {
+  border: 1px solid white;
+}
+
 td {
   text-align: center;
 }
@@ -29,12 +33,24 @@ td a {
   text-decoration: none;
 }
 
+tbody td a {
+  display: block;
+}
+
 td.true {
   background-color: #66c285;
 }
 
+td.true:hover {
+  background-color: #75d295;
+}
+
 td.false {
   background-color: #e08566;
+}
+
+td.false:hover {
+  background-color: #f09576;
 }
 
 div.preview {
