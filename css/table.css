@@ -10,6 +10,7 @@ thead th, thead td {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
   padding: .3em .5em;
+  width: 8em;
 }
 
 tbody tr:last-child th, tbody tr:last-child td {
@@ -18,6 +19,7 @@ tbody tr:last-child th, tbody tr:last-child td {
 
 tbody th {
   padding: .2em 0;
+  width: 12em;
 }
 
 tbody td {
@@ -53,7 +55,24 @@ td.false:hover {
   background-color: #f09576;
 }
 
-div.preview {
+td.unknown {
+  font-weight: bold;
+  background-color: rgba(0, 0, 255, .3);
+}
+
+td.unknown:hover {
+  background-color: rgba(0, 0, 255, .2);
+}
+
+td[data-tag] a {
+  background-image: url('/~pbelmans/stacks-table/stacks-transparent-gray.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  min-height: 16px;
+  background-size: 16px;
+}
+
+div.tooltip {
   position: absolute;
   padding: 4px;
   border: 1px solid #d9d8d1;

@@ -85,7 +85,7 @@ class ComparisonTable {
   // get the elements in the column headers
   private function getColumnHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT name FROM [" . $this->getTableName("columns") . "]");
+    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTableName("columns") . "]");
     if ($sql->execute())
       return $sql->fetchAll();
 
@@ -95,7 +95,7 @@ class ComparisonTable {
   // get the elements in the row headers
   private function getRowHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "]");
+    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "] ORDER BY name");
     if ($sql->execute())
       return $sql->fetchAll();
 
@@ -138,12 +138,15 @@ class ComparisonTable {
     return $this->tablePrefix . "-" . $table;
   }
 
-  protected static function printMark($relation) {
+  // print the mark corresponding the status field
+  protected function printMark($relation) {
     $output = "";
 
+    // if the tag is not empty we make the symbol clickable
     if (!empty($relation["tag"]))
       $output .= "<a href='" . StacksLinks::tag($relation["tag"]) . "'>";
 
+    // choose the correct symbol
     switch ($relation["status"]) {
       case "true":
         $output .= "&#x2713;";
@@ -151,12 +154,42 @@ class ComparisonTable {
       case "false":
         $output .= "&#x2717;";
         break;
+      case "unknown":
+        $output .= "?";
+        break;
       default:
         exit("should not happen"); # TODO improve
     }
 
+    // if the tag is not empty we make the symbol clickable
     if (!empty($relation["tag"]))
       $output .= "</a>";
+
+    return $output;
+  }
+
+  // print a cell containing a check mark
+  protected function printMarkCell($relation) {
+    $output = "";
+
+    if (!empty($relation["tag"]))
+      $output .= "<td class='" . $relation["status"] . "' data-tag='" . StacksLinks::tag($relation["tag"]) . "'>";
+    else
+      $output .= "<td class='" . $relation["status"] . "'>";
+
+    $output .= $this->printMark($relation) . "</td>"; // TODO change this to static again but I don't know syntax to call static functions in the same class...
+
+    return $output;
+  }
+
+  // print a cell containing a definition
+  protected function printDefinition($row) {
+    $output = "";
+
+    if (!empty($row["tag"]))
+      $output .= "<th data-tag='" . $row["tag"] . "'><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
+    else
+      $output .= "<th>" . $row["name"] . "</th>";
 
     return $output;
   }
@@ -174,23 +207,12 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
   }
 
   protected function outputRelation($relation) {
-    // TODO handle the different scenarios: false (link to example, if present), true (link to tag, if present), unknown
     $output = "";
     
     if (empty($relation)) // empty string implies that there is no relation in the database
       $output .= "<td></td>";
-    else {
-      switch ($relation["status"]) {
-        case "true":
-          $output .= "<td class='true' data-tag='" . $relation["tag"] . "'>" . parent::printMark($relation) . "</td>";
-          break;
-        case "false":
-          $output .= "<td class='false' data-tag='" . $relation["tag"] . "'>" . parent::printMark($relation) . "</td>";
-          break;
-        default:
-          exit("should not happen"); // TODO fix
-      }
-    }
+    else
+      $output .= parent::printMarkCell($relation);
 
     return $output;
   }
