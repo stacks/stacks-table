@@ -40,35 +40,36 @@ catch(PDOException $e) {
 <link rel="stylesheet" type="text/css" href="http://stacks.math.columbia.edu/css/tag.css">
 
 <script type="text/javascript">
-// keep track of the location of the mouse and change the position of the preview
+// keep track of the location of the mouse and change the position of the tooltips
 $(document).mousemove (function(e) {
-  $("div.preview").css({"top": (20 + e.pageY) + "px", "left": (20 + e.pageX) + "px"});
+  $("div.tooltip").css({"top": (20 + e.pageY) + "px", "left": (20 + e.pageX) + "px"});
 });
 
-// toggle the tag preview for the definition of a concept
-function toggleTagView() {
+// toggle the tooltip (fired by a JQuery event)
+function toggleTooltip() {
   var tag = $(this).data("tag");
 
-  // the preview doesn't exist yet, hence we create it
-  if ($("div#preview-" + tag).length == 0) {
+  // the tooltip doesn't exist yet, hence we create it
+  if ($("div#tooltip-" + tag).length == 0) {
     // create the element
-    $("body").append($("<div class='preview' id='preview-" + tag + "'></div>"));
+    $("body").append($("<div class='tooltip' id='tooltip-" + tag + "'></div>"));
+
     // create the blockquote containing the tag
-    $("div#preview-" + tag).append($("<blockquote class='rendered'></blockquote>"));
+    $("div#tooltip-" + tag).append($("<blockquote class='rendered'></blockquote>"));
     // load the HTML from the proxy script
-    $("div#preview-" + tag + " blockquote").load("php/tag.php?tag=" + tag, function() {
+    $("div#tooltip-" + tag + " blockquote").load("php/tag.php?tag=" + tag, function() {
       // render math once the text has been loaded
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview-" + tag]);
     });
   }
   // otherwise we can just toggle its visibility
   else
-    $("div#preview-" + tag).toggle();
-}
+    $("div#tooltip-" + tag).toggle();
+};
 
 $(document).ready(function() {
   // hovering over a property shows its definition
-  $("th[data-tag]").hover(toggleTagView);
+  $("th[data-tag]").hover(toggleTooltip);
 });
 </script>
 
