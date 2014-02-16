@@ -4,8 +4,8 @@
 import os.path, sqlite3, sys
 
 # configuration variables
-#prefix = "morphism-properties-preservation"
-prefix = "derived-categories-preservation"
+prefix = "morphism-properties-preservation"
+#prefix = "derived-categories-preservation"
 database = "stacks.sqlite"
 
 def execute(filename):

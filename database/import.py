@@ -2,8 +2,8 @@ import json, sqlite3
 
 # TODO write code to check whether the tag has been changed
 
-#prefix = "morphism-properties-preservation"
-prefix = "derived-categories-preservation"
+prefix = "morphism-properties-preservation"
+#prefix = "derived-categories-preservation"
 database = "stacks.sqlite"
 
 # close the connection
@@ -192,6 +192,8 @@ def importRows():
   f = open(prefix + "/rows.json")
   rows = json.load(f)
 
+  # TODO somehow we should be able to impose an order on these keys
+
   for name in rows.keys():
     if not rowExists(name):
       createRow(name)
@@ -204,6 +206,8 @@ def importColumns():
   f = open(prefix + "/columns.json")
   columns = json.load(f)
 
+  # TODO somehow we should be able to impose an order on these keys
+  
   for name in columns.keys():
     if not columnExists(name):
       createColumn(name)
