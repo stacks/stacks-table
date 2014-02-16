@@ -7,21 +7,14 @@ So far this is a proof of concept. It shows that it could be nice (and isn't too
 Setup
 -----
 
-We envision more tables (see later for some suggestions). To do so we would like to have a common base, and instantiate this. Some remarks concerning a possible setup for this:
+The setup is different from the one originally described. It works as follows:
 
-* create a `stacks-table` base repository, that has all the required main things
-  - managing three tables: column headers, row headers and then the relations
-  - JSON import, without any frills, but with helper code to check changes to fields that will be added in the forks (see later)
-  - PHP pulls stuff from the database
-  - JS code for showing standard things (i.e. previewing tags, show references to EGA's etc, sort the table)
-  - configuration: give a prefix for the tables we'd have to use to keep multiple tables (see later) separate
-* fork this `stacks-table` repository into `morphism-properties-preservation-table` (that would be the one with the functionality currently in this project) and add the required functionality:
-  - handle the table-specific fields in the input (i.e. in the current situation we have tags associated to row headers and relations, but that might be different for other tables)
-  - output table based on the extra fields
+* this repository contains both the base code and the instances
+* 3 tables are created for each table by `database/create.py`, based on the standard format and extra fields (which are described in `database/prefix` where `prefix` stands for the prefix that is used for the 3 tables
+* using `database/import.py` the JSON files in the directory for a given table are imported
+* `table.php` contains a basic table, which can then be extended to take into acount the extra fields present in the database
 
-This seems like the best approach: we'd be able to merge changes upstream (i.e. the base repository) as we go along, we can easily instantiate new tables by just forking, changing the config a little and (if required) adding fields to the input and output.
-
-At first it seemed like this would be a lot of work, but once you think about it, it's not too difficult: we'd have a `Table` class, overload it in the forks (hence we can easily integrate it into the real `stacks-website` project).
+People are free to fork this repository and / or propose changes, which will then be merged (if we like them).
 
 
 Ideas for tables
@@ -46,5 +39,6 @@ Some general ideas:
 2. sorting things, based on location in the stacks project, being true or not, ...
 3. more visual clues (colour?)
 4. if we at some point have slogans in the Stacks project, these tables serve as an excellent reality check as the format of the slogans could be standardised for some of the tables
+5. dependency check: when you click on a fact, show which other things depend on it (or it depends on)
 
 To anyone who reads this: feel free to make suggestions.
