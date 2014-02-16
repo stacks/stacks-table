@@ -1,4 +1,4 @@
-import json, sqlite3
+import collections, json, sqlite3
 
 # TODO write code to check whether the tag has been changed
 
@@ -190,9 +190,7 @@ def updateField(table, key, field, value):
 # import rows from the JSON file
 def importRows():
   f = open(prefix + "/rows.json")
-  rows = json.load(f)
-
-  # TODO somehow we should be able to impose an order on these keys
+  rows = json.load(f, object_pairs_hook=collections.OrderedDict)
 
   for name in rows.keys():
     if not rowExists(name):
@@ -204,9 +202,7 @@ def importRows():
 # import rows from the JSON file
 def importColumns():
   f = open(prefix + "/columns.json")
-  columns = json.load(f)
-
-  # TODO somehow we should be able to impose an order on these keys
+  columns = json.load(f, object_pairs_hook=collections.OrderedDict)
   
   for name in columns.keys():
     if not columnExists(name):
