@@ -2,342 +2,410 @@
   {
     "row" : "closed immersion",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01JY"
   },
   {
     "row" : "open immersion",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01JY"
   },
   {
     "row" : "locally closed immersion",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01JY"
   },
   {
     "row" : "quasi-compact",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01K5"
   },
   {
     "row" : "universally closed",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01KB"
   },
   {
     "row" : "separated",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01KU"
   },
   {
     "row" : "quasi-separated",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01KU"
   },
   {
     "row" : "monomorphism",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02YC"
   },
   {
     "row" : "surjective",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01S1"
   },
   {
     "row" : "universally injective",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01S4"
   },
   {
     "row" : "affine",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01SD"
   },
   {
     "row" : "quasi-affine",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01SO"
   },
   {
     "row" : "of finite type",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01T4"
   },
   {
     "row" : "locally of finite type",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01T4"
   },
   {
     "row" : "quasi-finite",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01TM"
   },
   {
     "row" : "locally quasi-finite",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01TM"
   },
   {
     "row" : "of finite presentation",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01TS"
   },
   {
     "row" : "locally of finite presentation",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01TS"
   },
   {
     "row" : "locally of finite type of relative dimension $d$",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02NK"
   },
   {
     "row" : "universally open",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01U0"
   },
   {
     "row" : "flat",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01U9"
   },
   {
     "row" : "syntomic",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01UI"
   },
   {
     "row" : "smooth",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01VB"
   },
   {
     "row" : "unramified",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02GA"
   },
   {
     "row" : "G-unramified",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02GA"
   },
   {
     "row" : "étale",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02GO"
   },
   {
     "row" : "proper",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01W4"
   },
   {
     "row" : "H-projective",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01WF"
   },
   {
     "row" : "projective",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02V6"
   },
   {
     "row" : "locally projective",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02V6"
   },
   {
     "row" : "finite",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01WL"
   },
   {
     "row" : "integral",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "01WL"
   },
   {
     "row" : "finite locally free",
     "column" : "arbitrary base change",
+    "status" : "true",
     "tag" : "02KD"
   },
   {
     "row" : "closed immersion",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02V0"
   },
   {
     "row" : "open immersion",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02V0"
   },
   {
     "row" : "locally closed immersion",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02V0"
   },
   {
     "row" : "quasi-compact",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01K6"
   },
   {
     "row" : "universally closed",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01W3"
   },
   {
     "row" : "separated",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01KU"
   },
   {
     "row" : "quasi-separated",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01KU"
   },
   {
     "row" : "monomorphism",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01L5"
   },
   {
     "row" : "surjective",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01S0"
   },
   {
     "row" : "universally injective",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02V1"
   },
   {
     "row" : "affine",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01SC"
   },
   {
     "row" : "quasi-affine",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01SN"
   },
   {
     "row" : "of finite type",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01T3"
   },
   {
     "row" : "locally of finite type",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01T3"
   },
   {
     "row" : "quasi-finite",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01TL"
   },
   {
     "row" : "locally quasi-finite",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01TL"
   },
   {
     "row" : "of finite presentation",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01TR"
   },
   {
     "row" : "locally of finite presentation",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01TR"
   },
   {
     "row" : "universally open",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02V2"
   },
   {
     "row" : "flat",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01U7"
   },
   {
     "row" : "syntomic",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01UH"
   },
   {
     "row" : "smooth",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01VA"
   },
   {
     "row" : "unramified",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02G9"
   },
   {
     "row" : "G-unramified",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02G9"
   },
   {
     "row" : "étale",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02GN"
   },
   {
     "row" : "proper",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01W3"
   },
   {
     "row" : "H-projective",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01WE"
   },
   {
     "row" : "finite",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01WK"
   },
   {
     "row" : "integral",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01WK"
   },
   {
     "row" : "finite locally free",
     "column" : "composition",
+    "status" : "true",
     "tag" : "02KC"
   },
 
   {
     "row" : "closed immersion",
     "column" : "fpqc local",
+    "status" : "true",
     "tag" : "02L6"
   },
   {
     "row" : "open immersion",
     "column" : "fpqc local",
+    "status" : "true",
     "tag" : "02L3"
   },
   {
     "row" : "flat",
     "column" : "fpqc local",
+    "status" : "true",
     "tag" : "02L2"
   },
   {
     "row" : "quasi-separated",
     "column" : "fpqc local",
+    "status" : "true",
     "tag" : "02KU"
   },
   {
     "row" : "quasi-separated",
     "column" : "composition",
+    "status" : "true",
     "tag" : "01KU"
   }
 ]
