@@ -592,5 +592,10 @@
     "row" : "scheme-theoretically dominant",
     "column" : "arbitrary base change",
     "status" : "false"
+  },
+  {
+    "row" : "immersion",
+    "column" : "fpqc local",
+    "status" : "unknown"
   }
 ]
