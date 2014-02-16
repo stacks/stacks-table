@@ -175,10 +175,146 @@
     "tag" : "02V0"
   },
   {
+    "row" : "locally closed immersion",
+    "column" : "composition",
+    "tag" : "02V0"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "composition",
+    "tag" : "01K6"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "composition",
+    "tag" : "01W3"
+  },
+  {
+    "row" : "separated",
+    "column" : "composition",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "composition",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "composition",
+    "tag" : "01L5"
+  },
+  {
+    "row" : "surjective",
+    "column" : "composition",
+    "tag" : "01S0"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "composition",
+    "tag" : "02V1"
+  },
+  {
+    "row" : "affine",
+    "column" : "composition",
+    "tag" : "01SC"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "composition",
+    "tag" : "01SN"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "composition",
+    "tag" : "01T3"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "composition",
+    "tag" : "01T3"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "composition",
+    "tag" : "01TL"
+  },
+  {
+    "row" : "locally quasi-finite",
+    "column" : "composition",
+    "tag" : "01TL"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "composition",
+    "tag" : "01TR"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "composition",
+    "tag" : "01TR"
+  },
+  {
+    "row" : "universally open",
+    "column" : "composition",
+    "tag" : "02V2"
+  },
+  {
     "row" : "flat",
     "column" : "composition",
     "tag" : "01U7"
   },
+  {
+    "row" : "syntomic",
+    "column" : "composition",
+    "tag" : "01UH"
+  },
+  {
+    "row" : "smooth",
+    "column" : "composition",
+    "tag" : "01VA"
+  },
+  {
+    "row" : "unramified",
+    "column" : "composition",
+    "tag" : "02G9"
+  },
+  {
+    "row" : "G-unramified",
+    "column" : "composition",
+    "tag" : "02G9"
+  },
+  {
+    "row" : "étale",
+    "column" : "composition",
+    "tag" : "02GN"
+  },
+  {
+    "row" : "proper",
+    "column" : "composition",
+    "tag" : "01W3"
+  },
+  {
+    "row" : "H-projective",
+    "column" : "composition",
+    "tag" : "01WE"
+  },
+  {
+    "row" : "finite",
+    "column" : "composition",
+    "tag" : "01WK"
+  },
+  {
+    "row" : "integral",
+    "column" : "composition",
+    "tag" : "01WK"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "composition",
+    "tag" : "02KC"
+  },
+
   {
     "row" : "closed immersion",
     "column" : "fpqc local",
