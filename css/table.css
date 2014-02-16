@@ -2,6 +2,10 @@ table {
   border-collapse: collapse;
 }
 
+table a {
+  color: black;
+}
+
 thead th, thead td {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
@@ -26,7 +30,11 @@ td a {
 }
 
 td.true {
-  background-color: #6c0;
+  background-color: #66c285;
+}
+
+td.false {
+  background-color: #e08566;
 }
 
 div.preview {

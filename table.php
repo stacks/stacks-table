@@ -137,6 +137,29 @@ class ComparisonTable {
   private function getTableName($table) {
     return $this->tablePrefix . "-" . $table;
   }
+
+  protected static function printMark($relation) {
+    $output = "";
+
+    if (!empty($relation["tag"]))
+      $output .= "<a href='" . StacksLinks::tag($relation["tag"]) . "'>";
+
+    switch ($relation["status"]) {
+      case "true":
+        $output .= "&#x2713;";
+        break;
+      case "false":
+        $output .= "&#x2717;";
+        break;
+      default:
+        exit("should not happen"); # TODO improve
+    }
+
+    if (!empty($relation["tag"]))
+      $output .= "</a>";
+
+    return $output;
+  }
 }
 
 /**
@@ -159,7 +182,10 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
     else {
       switch ($relation["status"]) {
         case "true":
-          $output .= "<td class='true' data-tag='" . $relation["tag"] . "'><a href='http://stacks.math.columbia.edu/tag/" . $relation["tag"] . "'>&#x2713;</a></td>";
+          $output .= "<td class='true' data-tag='" . $relation["tag"] . "'>" . parent::printMark($relation) . "</td>";
+          break;
+        case "false":
+          $output .= "<td class='false' data-tag='" . $relation["tag"] . "'>" . parent::printMark($relation) . "</td>";
           break;
         default:
           exit("should not happen"); // TODO fix
