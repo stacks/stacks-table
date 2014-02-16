@@ -10,9 +10,24 @@
     "tag" : "01JY"
   },
   {
-    "row" : "flat",
+    "row" : "locally closed immersion",
     "column" : "arbitrary base change",
-    "tag" : "01U9"
+    "tag" : "01JY"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "arbitrary base change",
+    "tag" : "01K5"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "arbitrary base change",
+    "tag" : "01KB"
+  },
+  {
+    "row" : "separated",
+    "column" : "arbitrary base change",
+    "tag" : "01KU"
   },
   {
     "row" : "quasi-separated",
@@ -20,9 +35,134 @@
     "tag" : "01KU"
   },
   {
+    "row" : "monomorphism",
+    "column" : "arbitrary base change",
+    "tag" : "02YC"
+  },
+  {
+    "row" : "surjective",
+    "column" : "arbitrary base change",
+    "tag" : "01S1"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "arbitrary base change",
+    "tag" : "01S4"
+  },
+  {
+    "row" : "affine",
+    "column" : "arbitrary base change",
+    "tag" : "01SD"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "arbitrary base change",
+    "tag" : "01SO"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "arbitrary base change",
+    "tag" : "01T4"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "arbitrary base change",
+    "tag" : "01T4"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "arbitrary base change",
+    "tag" : "01TM"
+  },
+  {
+    "row" : "locally quasi-finite",
+    "column" : "arbitrary base change",
+    "tag" : "01TM"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "arbitrary base change",
+    "tag" : "01TS"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "arbitrary base change",
+    "tag" : "01TS"
+  },
+  {
+    "row" : "locally of finite type of relative dimension $d$",
+    "column" : "arbitrary base change",
+    "tag" : "02NK"
+  },
+  {
+    "row" : "universally open",
+    "column" : "arbitrary base change",
+    "tag" : "01U0"
+  },
+  {
+    "row" : "flat",
+    "column" : "arbitrary base change",
+    "tag" : "01U9"
+  },
+  {
+    "row" : "syntomic",
+    "column" : "arbitrary base change",
+    "tag" : "01UI"
+  },
+  {
+    "row" : "smooth",
+    "column" : "arbitrary base change",
+    "tag" : "01VB"
+  },
+  {
+    "row" : "unramified",
+    "column" : "arbitrary base change",
+    "tag" : "02GA"
+  },
+  {
+    "row" : "G-unramified",
+    "column" : "arbitrary base change",
+    "tag" : "02GA"
+  },
+  {
+    "row" : "étale",
+    "column" : "arbitrary base change",
+    "tag" : "02GO"
+  },
+  {
+    "row" : "proper",
+    "column" : "arbitrary base change",
+    "tag" : "01W4"
+  },
+  {
+    "row" : "H-projective",
+    "column" : "arbitrary base change",
+    "tag" : "01WF"
+  },
+  {
     "row" : "projective",
     "column" : "arbitrary base change",
     "tag" : "02V6"
+  },
+  {
+    "row" : "locally projective",
+    "column" : "arbitrary base change",
+    "tag" : "02V6"
+  },
+  {
+    "row" : "finite",
+    "column" : "arbitrary base change",
+    "tag" : "01WL"
+  },
+  {
+    "row" : "integral",
+    "column" : "arbitrary base change",
+    "tag" : "01WL"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "arbitrary base change",
+    "tag" : "02KD"
   },
   {
     "row" : "closed immersion",
