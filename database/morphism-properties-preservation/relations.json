@@ -462,6 +462,12 @@
     "tag" : "02VI"
   },
   {
+    "row" : "locally quasi-finite",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VI"
+  },
+  {
     "row" : "of finite presentation",
     "column" : "fpqc local",
     "status" : "true",
@@ -544,5 +550,11 @@
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02VO"
+  },
+  {
+    "row" : "projective",
+    "column" : "fpqc local",
+    "status" : "false",
+    "tag" : "08J0"
   }
 ]
