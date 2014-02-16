@@ -377,7 +377,6 @@
     "status" : "true",
     "tag" : "02KC"
   },
-
   {
     "row" : "closed immersion",
     "column" : "fpqc local",
@@ -391,21 +390,159 @@
     "tag" : "02L3"
   },
   {
+    "row" : "quasi-compact",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KQ"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KS"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KR"
+  },
+  {
+    "row" : "separated",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KU"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02YK"
+  },
+  {
+    "row" : "surjective",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KV"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KW"
+  },
+  {
+    "row" : "affine",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L5"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L7"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KZ"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KX"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VI"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L0"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KY"
+  },
+  {
+    "row" : "locally of finite type of relative dimension $d$",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VJ"
+  },
+  {
+    "row" : "universally open",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KT"
+  },
+  {
     "row" : "flat",
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02L2"
   },
   {
-    "row" : "quasi-separated",
+    "row" : "syntomic",
     "column" : "fpqc local",
     "status" : "true",
-    "tag" : "02KU"
+    "tag" : "02VK"
   },
   {
-    "row" : "quasi-separated",
-    "column" : "composition",
+    "row" : "smooth",
+    "column" : "fpqc local",
     "status" : "true",
-    "tag" : "01KU"
+    "tag" : "02VL"
+  },
+  {
+    "row" : "unramified",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VM"
+  },
+  {
+    "row" : "G-unramified",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VM"
+  },
+  {
+    "row" : "étale",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VN"
+  },
+  {
+    "row" : "proper",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L1"
+  },
+  {
+    "row" : "finite",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02LA"
+  },
+  {
+    "row" : "integral",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02LA"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VO"
   }
 ]
