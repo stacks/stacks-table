@@ -36,7 +36,7 @@ catch(PDOException $e) {
 </script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/table.css">
 <link rel="stylesheet" type="text/css" href="http://stacks.math.columbia.edu/css/tag.css">
 
 <script type="text/javascript">
