@@ -551,10 +551,46 @@
     "status" : "true",
     "tag" : "02VO"
   },
+  
   {
     "row" : "projective",
     "column" : "fpqc local",
     "status" : "false",
     "tag" : "08J0"
+  },
+  {
+    "row" : "bijective",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "dominant",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "closed",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "injective",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "open",
+    "column" : "arbitrary base change",
+    "status" : "false"
+  },
+  {
+    "row" : "scheme-theoretically dominant",
+    "column" : "arbitrary base change",
+    "status" : "false"
   }
 ]
