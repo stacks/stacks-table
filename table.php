@@ -153,12 +153,18 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
   protected function outputRelation($relation) {
     // TODO handle the different scenarios: false (link to example, if present), true (link to tag, if present), unknown
     $output = "";
-
+    
     if (empty($relation)) // empty string implies that there is no relation in the database
       $output .= "<td></td>";
-    else
-      $output .= "<td data-tag='" . $relation["tag"] . "'><a href='http://stacks.math.columbia.edu/tag/" . $relation["tag"] . "'>&#x2713;</a></td>";
-      // TODO this could be moved to some external function, as I imagine that this format will be (often) reused
+    else {
+      switch ($relation["status"]) {
+        case "true":
+          $output .= "<td class='true' data-tag='" . $relation["tag"] . "'><a href='http://stacks.math.columbia.edu/tag/" . $relation["tag"] . "'>&#x2713;</a></td>";
+          break;
+        default:
+          exit("should not happen"); // TODO fix
+      }
+    }
 
     return $output;
   }
