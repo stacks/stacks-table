@@ -59,7 +59,7 @@ function toggleTooltip() {
     // load the HTML from the proxy script
     $("div#tooltip-" + tag + " blockquote").load("php/tag.php?tag=" + tag, function() {
       // render math once the text has been loaded
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview-" + tag]);
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub, "tooltip-" + tag]);
     });
   }
   // otherwise we can just toggle its visibility
