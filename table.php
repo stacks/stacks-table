@@ -218,8 +218,7 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
   }
 
   protected function outputRowHeader($row) {
-    // TODO this could be moved to some external function, as I imagine that this format will be (often) reused
-    return "<th data-tag='" . $row["tag"] . "'><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
+    return parent::printDefinition($row);
   }
 }
 
