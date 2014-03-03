@@ -18,7 +18,7 @@
   "of finite presentation" : { "tag" : "01TP" },
   "locally of finite presentation" : { "tag" : "01TP" },
   "locally of finite type of relative dimension $d$": {},
-  "local complete intersection" : { "tag" : "069N" },
+  "local complete intersection" : { "tag" : "068E" },
   "universally open" : { "tag" : "01U0" },
   "flat" : { "tag" : "01U3" },
   "syntomic" : { "tag" : "01UC" },
