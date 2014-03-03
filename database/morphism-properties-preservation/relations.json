@@ -597,5 +597,16 @@
     "row" : "immersion",
     "column" : "fpqc local",
     "status" : "unknown"
+  },
+  {
+    "row" : "local complete intersection",
+    "column" : "composition",
+    "status" : "true"
+  },
+  {
+    "row" : "local complete intersection",
+    "column" : "fpqc local",
+    "status" : "true"
+  }
   }
 ]
