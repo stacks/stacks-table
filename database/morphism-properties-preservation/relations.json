@@ -150,7 +150,7 @@
     "tag" : "02GA"
   },
   {
-    "row" : "étale",
+    "row" : "etale",
     "column" : "arbitrary base change",
     "status" : "true",
     "tag" : "02GO"
@@ -342,7 +342,7 @@
     "tag" : "02G9"
   },
   {
-    "row" : "étale",
+    "row" : "etale",
     "column" : "composition",
     "status" : "true",
     "tag" : "02GN"
@@ -522,7 +522,7 @@
     "tag" : "02VM"
   },
   {
-    "row" : "étale",
+    "row" : "etale",
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02VN"
@@ -609,6 +609,5 @@
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "069N"
-  }
   }
 ]
