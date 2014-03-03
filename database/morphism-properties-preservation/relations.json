@@ -601,12 +601,14 @@
   {
     "row" : "local complete intersection",
     "column" : "composition",
-    "status" : "true"
+    "status" : "true",
+    "tag" : "069J"
   },
   {
     "row" : "local complete intersection",
     "column" : "fpqc local",
-    "status" : "true"
+    "status" : "true",
+    "tag" : "069N"
   }
   }
 ]
