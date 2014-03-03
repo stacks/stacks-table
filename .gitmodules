@@ -1,0 +1,3 @@
+[submodule "js/floatHead"]
+	path = js/floatHead
+	url = https://github.com/mkoryak/floatThead.git

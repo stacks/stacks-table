@@ -21,6 +21,7 @@ catch(PDOException $e) {
 <html>
 <head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -84,9 +85,12 @@ print $table->outputTable();
 ?>
 <h1>Stability of properties of objects in derived categories</h1>
 <?php
-$table = new ComparisonTable($database, "derived-categories-preservation");
-print $table->outputTable();
+//$table = new ComparisonTable($database, "derived-categories-preservation");
+//print $table->outputTable();
 ?>
 </body>
+<script type="text/javascript">
+$("table").floatThead();
+</script>
 </html>
 

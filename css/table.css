@@ -11,6 +11,7 @@ thead th, thead td {
   border-bottom: 1px solid black;
   padding: .3em .5em;
   width: 8em;
+  background-color: white;
 }
 
 tbody tr:last-child th, tbody tr:last-child td {
@@ -24,6 +25,7 @@ tbody th {
 
 tbody td {
   border: 1px solid white;
+  width: 9em;
 }
 
 td {
