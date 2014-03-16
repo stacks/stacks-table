@@ -13,11 +13,26 @@ class ComparisonTable {
     $this->tablePrefix = $tablePrefix;
   }
 
+  // this function returns a selector for comments (this doesn't make sense without the table)
+  public function outputSelector() {
+    $output = "";
+
+    $output .= "<form class='selector' id='" . $this->tablePrefix . "-selector'>";
+
+    $columns = $this->getColumnHeaders();
+    foreach ($columns as $column)
+      $output .= "<label><input type='checkbox' checked value='" . $column["name"] . "'>" . $column["name"] . "</label>";
+
+    $output .= "</form>";
+
+    return $output;
+  }
+
   // this function returns the whole table (TODO would __toString be reasonable for this?)
   public function outputTable() {
     $output = "";
 
-    $output .= "<table>";
+    $output .= "<table id='" . $this->tablePrefix . "-table'>";
 
     // header of the table
     $output .= "<thead>";
@@ -61,7 +76,7 @@ class ComparisonTable {
   // output a column header
   protected function outputColumnHeader($column) {
     // this is the default, no frills
-    return "<th>" . $column["name"] . "</th>";
+    return "<th data-name='" . $column["name"] . "'>" . $column["name"] . "</th>";
   }
 
   protected function outputRelation($relation) {

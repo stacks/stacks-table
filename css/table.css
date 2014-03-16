@@ -1,3 +1,7 @@
+body {
+  width: 600px;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -81,4 +85,10 @@ div.tooltip {
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, .8);
+}
+
+form.selector label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
 }
