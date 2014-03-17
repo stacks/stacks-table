@@ -1,261 +1,42 @@
 [
   {
-    "row" : "closed immersion",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01JY"
+    "row" : "",
+    "column" : "cancellation",
+    "status" : "",
+    "tag" : ""
   },
   {
-    "row" : "open immersion",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01JY"
+    "row" : "",
+    "column" : "local on the target",
+    "status" : "",
+    "tag" : ""
   },
   {
-    "row" : "locally closed immersion",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01JY"
+    "row" : "",
+    "column" : "local on the source",
+    "status" : "",
+    "tag" : "",
+    "comment" : ""
   },
   {
-    "row" : "quasi-compact",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01K5"
+    "row" : "",
+    "column" : "IND",
+    "status" : "",
+    "tag" : ""
   },
   {
-    "row" : "universally closed",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01KB"
+    "row" : "",
+    "column" : "descent",
+    "status" : "",
+    "tag" : ""
   },
-  {
-    "row" : "separated",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01KU"
-  },
-  {
-    "row" : "quasi-separated",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01KU"
-  },
-  {
-    "row" : "monomorphism",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02YC"
-  },
-  {
-    "row" : "surjective",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01S1"
-  },
-  {
-    "row" : "universally injective",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01S4"
-  },
+
+
   {
     "row" : "affine",
-    "column" : "arbitrary base change",
-    "status" : "true",
+    "column" : "base change",
+    "status" : "arbitrary",
     "tag" : "01SD"
-  },
-  {
-    "row" : "quasi-affine",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01SO"
-  },
-  {
-    "row" : "of finite type",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01T4"
-  },
-  {
-    "row" : "locally of finite type",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01T4"
-  },
-  {
-    "row" : "quasi-finite",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01TM"
-  },
-  {
-    "row" : "locally quasi-finite",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01TM"
-  },
-  {
-    "row" : "of finite presentation",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01TS"
-  },
-  {
-    "row" : "locally of finite presentation",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01TS"
-  },
-  {
-    "row" : "locally of finite type of relative dimension $d$",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02NK"
-  },
-  {
-    "row" : "universally open",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01U0"
-  },
-  {
-    "row" : "flat",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01U9"
-  },
-  {
-    "row" : "syntomic",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01UI"
-  },
-  {
-    "row" : "smooth",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01VB"
-  },
-  {
-    "row" : "unramified",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02GA"
-  },
-  {
-    "row" : "G-unramified",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02GA"
-  },
-  {
-    "row" : "etale",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02GO"
-  },
-  {
-    "row" : "proper",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01W4"
-  },
-  {
-    "row" : "H-projective",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01WF"
-  },
-  {
-    "row" : "projective",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02V6"
-  },
-  {
-    "row" : "locally projective",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02V6"
-  },
-  {
-    "row" : "finite",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01WL"
-  },
-  {
-    "row" : "integral",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "01WL"
-  },
-  {
-    "row" : "finite locally free",
-    "column" : "arbitrary base change",
-    "status" : "true",
-    "tag" : "02KD"
-  },
-  {
-    "row" : "closed immersion",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02V0"
-  },
-  {
-    "row" : "open immersion",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02V0"
-  },
-  {
-    "row" : "locally closed immersion",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02V0"
-  },
-  {
-    "row" : "quasi-compact",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01K6"
-  },
-  {
-    "row" : "universally closed",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01W3"
-  },
-  {
-    "row" : "separated",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01KU"
-  },
-  {
-    "row" : "quasi-separated",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01KU"
-  },
-  {
-    "row" : "monomorphism",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01L5"
-  },
-  {
-    "row" : "surjective",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01S0"
-  },
-  {
-    "row" : "universally injective",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02V1"
   },
   {
     "row" : "affine",
@@ -264,118 +45,146 @@
     "tag" : "01SC"
   },
   {
-    "row" : "quasi-affine",
-    "column" : "composition",
+    "row" : "affine",
+    "column" : "fpqc local",
     "status" : "true",
-    "tag" : "01SN"
+    "tag" : "02L5"
   },
   {
-    "row" : "of finite type",
-    "column" : "composition",
+    "row" : "affine",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : ""
+    "comment" : "Proposition 12.3"
+  },
+ {
+    "row" : "affine",
+    "column" : "IND",
     "status" : "true",
-    "tag" : "01T3"
+    "tag" : ""
+    "comment" : "[EGAIV] (8.10.5)"
   },
   {
-    "row" : "locally of finite type",
-    "column" : "composition",
+    "row" : "affine",
+    "column" : "descent",
     "status" : "true",
-    "tag" : "01T3"
+    "tag" : ""
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "affine",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
   },
   {
-    "row" : "quasi-finite",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01TL"
+    "row" : "affine",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
   },
   {
-    "row" : "locally quasi-finite",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01TL"
+    "row" : "bijective",
+    "column" : "base change",
+    "status" : "false"
   },
   {
-    "row" : "of finite presentation",
+    "row" : "bijective",
     "column" : "composition",
     "status" : "true",
-    "tag" : "01TR"
+    "tag" : ""
   },
   {
-    "row" : "locally of finite presentation",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01TR"
+    "row" : "bijective",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
   },
   {
-    "row" : "universally open",
-    "column" : "composition",
+    "row" : "bijective",
+    "column" : "local on the target",
     "status" : "true",
-    "tag" : "02V2"
+    "tag" : ""
   },
   {
-    "row" : "flat",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01U7"
+    "row" : "bijective",
+    "column" : "local on the source,
+    "status" : "false",
+    "tag" : ""
+  },
+
+  {
+    "row" : "bijective",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
   },
   {
-    "row" : "syntomic",
-    "column" : "composition",
+    "row" : "bijective",
+    "column" : "descent",
     "status" : "true",
-    "tag" : "01UH"
+    "tag" : ""
+    "comment" : "Proposition 14.48"
+  },
+
+  {
+    "row" : "closed",
+    "column" : "base change",
+    "status" : "false"
   },
   {
-    "row" : "smooth",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01VA"
+    "row" : "closed",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
   },
   {
-    "row" : "unramified",
-    "column" : "composition",
+    "row" : "closed",
+    "column" : "local on the target",
     "status" : "true",
-    "tag" : "02G9"
+    "tag" : ""
   },
   {
-    "row" : "G-unramified",
+    "row" : "closed",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : ""
+  },
+
+  {
+    "row" : "closed",
     "column" : "composition",
     "status" : "true",
-    "tag" : "02G9"
+    "tag" : ""
   },
   {
-    "row" : "etale",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02GN"
+    "row" : "closed",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
   },
   {
-    "row" : "proper",
-    "column" : "composition",
+    "row" : "closed",
+    "column" : "descent",
     "status" : "true",
-    "tag" : "01W3"
+    "tag" : ""
+    "comment" : "Proposition 14.49"
+  },
+
+  {
+    "row" : "closed immersion",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01JY"
+    "comment" : "Proposition 4.32"
   },
   {
-    "row" : "H-projective",
+    "row" : "closed immersion",
     "column" : "composition",
     "status" : "true",
-    "tag" : "01WE"
-  },
-  {
-    "row" : "finite",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01WK"
-  },
-  {
-    "row" : "integral",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "01WK"
-  },
-  {
-    "row" : "finite locally free",
-    "column" : "composition",
-    "status" : "true",
-    "tag" : "02KC"
+    "tag" : "02V0"
+    "comment" : "Remark 3.47"
   },
   {
     "row" : "closed immersion",
@@ -384,142 +193,58 @@
     "tag" : "02L6"
   },
   {
-    "row" : "open immersion",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L3"
+    "row" : "closed immersion",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : ""
+    "comment" : "Remark 9.11"
   },
   {
-    "row" : "quasi-compact",
-    "column" : "fpqc local",
+    "row" : "closed immersion",
+    "column" : "local on the target",
     "status" : "true",
-    "tag" : "02KQ"
+    "tag" : ""
+  },
+    {
+    "row" : "closed immersion",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : ""
+  },
+
+  {
+    "row" : "closed immersion",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : ""
+    "comment" : "Proposition 10.75"
   },
   {
-    "row" : "universally closed",
-    "column" : "fpqc local",
+    "row" : "closed immersion",
+    "column" : "descent",
     "status" : "true",
-    "tag" : "02KS"
+    "tag" : ""
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "dominant",
+    "column" : "base change",
+    "status" : "false",
+    "comment" : "Not in book"
+  },
+
+  {
+    "row" : "etale",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02GN"
   },
   {
-    "row" : "quasi-separated",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KR"
-  },
-  {
-    "row" : "separated",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KU"
-  },
-  {
-    "row" : "monomorphism",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02YK"
-  },
-  {
-    "row" : "surjective",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KV"
-  },
-  {
-    "row" : "universally injective",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KW"
-  },
-  {
-    "row" : "affine",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L5"
-  },
-  {
-    "row" : "quasi-affine",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L7"
-  },
-  {
-    "row" : "of finite type",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KZ"
-  },
-  {
-    "row" : "locally of finite type",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KX"
-  },
-  {
-    "row" : "quasi-finite",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VI"
-  },
-  {
-    "row" : "locally quasi-finite",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VI"
-  },
-  {
-    "row" : "of finite presentation",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L0"
-  },
-  {
-    "row" : "locally of finite presentation",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KY"
-  },
-  {
-    "row" : "locally of finite type of relative dimension $d$",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VJ"
-  },
-  {
-    "row" : "universally open",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02KT"
-  },
-  {
-    "row" : "flat",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L2"
-  },
-  {
-    "row" : "syntomic",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VK"
-  },
-  {
-    "row" : "smooth",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VL"
-  },
-  {
-    "row" : "unramified",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VM"
-  },
-  {
-    "row" : "G-unramified",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02VM"
+    "row" : "etale",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02GO"
   },
   {
     "row" : "etale",
@@ -528,16 +253,433 @@
     "tag" : "02VN"
   },
   {
-    "row" : "proper",
-    "column" : "fpqc local",
-    "status" : "true",
-    "tag" : "02L1"
+    "row" : "etale",
+    "column" : "cancellation",
+    "status" : "If $g$ is unramified",
+    "tag" : ""
+    "comment" : "Volume II" 
   },
+  {
+    "row" : "etale",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "etale",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "etale",
+    "column" : "IND",
+    "status" : "",
+    "tag" : ""
+    "comment" : "[EGAIV] (17.7.8)"
+  },
+  {
+    "row" : "etale",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : ""
+    "comment" : "[EGAIV] (17.7.3)"
+  },
+
+  {
+    "row" : "faithfully flat",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 14.8",
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "composition",
+    "status" : "true",
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "cancellation",
+    "status" : "If $g$ is an opan immersion",
+    "tag" : ""
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "faithfully flat",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : ""
+    "comment" : "Corollary 14.12"
+  },
+
+
   {
     "row" : "finite",
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02LA"
+  },
+
+
+  {
+    "row" : "finite",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01WL"
+  },
+  {
+    "row" : "finite",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01WK"
+  },
+    {
+    "row" : "finite",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : ""
+  },
+  {
+    "row" : "finite",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "finite",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "finite",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : ""
+    "comment" : "Proposition 12.11"
+  },
+  {
+    "row" : "finite",
+    "column" : "descent",
+    "status" : "",
+    "tag" : ""
+    "comment" : "Proposition 14.51"
+  },
+
+
+  {
+    "row" : "finite locally free",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02KD"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VO"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02KC"
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "finite locally free",
+    "column" : "descent",
+    "status" : "",
+    "tag" : "",
+    "comment" : "Follows from the permanence properties for 'finite','flat' and 'of finite
+        presentation'"
+  },
+
+    {
+    "row" : "flat",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01U9"
+    "comment" : "Proposition 14.3"
+  },
+  {
+    "row" : "flat",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L2"
+  },
+
+  {
+    "row" : "flat",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01U7"
+  },
+  {
+    "row" : "flat",
+    "column" : "cancellation",
+    "status" : "If $g$ is unramified",
+    "tag" : "",
+    "comment" : "Volume II"
+  },
+  {
+    "row" : "flat",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "flat",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "flat",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (11.2.6)"
+  },
+  {
+    "row" : "flat",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Corollary 14.12"
+  },
+
+  {
+    "row" : "G-unramified",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02G9",
+    "comment" : "Not in book"
+  },
+
+  {
+    "row" : "G-unramified",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02GA"
+  },
+  {
+    "row" : "G-unramified",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VM"
+  },
+
+  {
+    "row" : "H-projective",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01WF",
+    "comment" : "Not in book"
+  },
+  {
+    "row" : "H-projective",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01WE"
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "base change",
+    "status" : "false"
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  {
+    "row" : "homeomorphism",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "homeomorphism",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.49"
+  },
+
+  {
+    "row" : "immersion",
+    "column" : "fpqc local",
+    "status" : "unknown"
+  },
+  {
+    "row" : "immersion",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 4.32"
+  },
+  {
+    "row" : "immersion",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 3.47"
+  },
+  {
+    "row" : "immersion",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 9.11"
+  },
+  {
+    "row" : "immersion",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "immersion",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "immersion",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 10.75"
+  },
+  {
+    "row" : "immersion",
+    "column" : "descent",
+    "status" : "If $f'$ is quasi-compact",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "injective",
+    "column" : "base change",
+    "status" : "false"
+  },
+  {
+    "row" : "injective",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  {
+    "row" : "injective",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "injective",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "injective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "injective",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "injective",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.48"
+  },
+
+  {
+    "row" : "integral",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01WK"
+  },
+  {
+    "row" : "integral",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01WL"
   },
   {
     "row" : "integral",
@@ -546,63 +688,105 @@
     "tag" : "02LA"
   },
   {
-    "row" : "finite locally free",
-    "column" : "fpqc local",
+    "row" : "integral",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : ""
+  },
+  {
+    "row" : "integral",
+    "column" : "local on the target",
     "status" : "true",
-    "tag" : "02VO"
+    "tag" : ""
   },
-  
   {
-    "row" : "projective",
-    "column" : "fpqc local",
+    "row" : "integral",
+    "column" : "local on the source",
     "status" : "false",
-    "tag" : "08J0"
+    "tag" : "",
+    "comment" : ""
   },
   {
-    "row" : "bijective",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "integral",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 12.11"
   },
   {
-    "row" : "dominant",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "integral",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (2.7.1)"
   },
   {
-    "row" : "closed",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "isomorphism",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
   },
   {
-    "row" : "homeomorphism",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "isomorphism",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
   },
   {
-    "row" : "injective",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "isomorphism",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
   },
   {
-    "row" : "open",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "isomorphism",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
   },
   {
-    "row" : "scheme-theoretically dominant",
-    "column" : "arbitrary base change",
-    "status" : "false"
+    "row" : "isomorphism",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
   },
   {
-    "row" : "immersion",
-    "column" : "fpqc local",
-    "status" : "unknown"
+    "row" : "isomorphism",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Corollary 10.64"
   },
+  {
+    "row" : "isomorphism",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+
+   {
+    "row" : "locally closed immersion",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01JY",
+    "comment" : "Not in book"
+  },
+  {
+    "row" : "locally closed immersion",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02V0"
+  },
+
   {
     "row" : "local complete intersection",
     "column" : "composition",
     "status" : "true",
-    "tag" : "069J"
+    "tag" : "069J",
+    "comment" : "Not in book"
   },
   {
     "row" : "local complete intersection",
@@ -610,4 +794,1352 @@
     "status" : "true",
     "tag" : "069N"
   }
+
+  {
+    "row" : "locally of finite presentation",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01TS",
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01TR"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KY"
+  },
+  {
+    "row" : "locally of finite presentation
+    "comment" : "",
+    "column" : "cancellation",
+    "status" : "If $g$ is locally of finite type",
+    "tag" : "",
+    "comment" : "Proposition 10.35"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "locally of finite presentation
+    "comment" : "",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "By definition"
+  },
+  {
+    "row" : "locally of finite presentation",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "locally of finite type",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01T3"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KX"
+  },
+
+  {
+    "row" : "locally of finite type",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01T4"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 10.7"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "By definition"
+  },
+  {
+    "row" : "locally of finite type",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+  {
+    "row" : "locally of finite type of relative dimension $d$",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VJ",
+    "comment" : "Not in book"
+  },
+  {
+    "row" : "locally of finite type of relative dimension $d$",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02NK"
+  },
+  {
+    "row" : "locally projective",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02V6",
+    "comment" : "Not in book"
+  },
+  {
+    "row" : "locally quasi-finite",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VI",
+    "comment" : "Not in book"
+  },
+
+  {
+    "row" : "locally quasi-finite",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01TM"
+  },
+  {
+    "row" : "locally quasi-finite",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01TL"
+  },
+
+   {
+    "row" : "monomorphism",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02YC"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02YK"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01L5"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "monomorphism",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "of finite presentation",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01TS"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01TR"
+    "comment" : "
+
+    "comment" : "
+
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated and locally of finite type",
+    "tag" : "",
+    "comment" : "Proposition 10.35"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "By definition"
+  },
+  {
+    "row" : "of finite presentation",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "of finite type",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01T3"
+  },
+
+ {
+    "row" : "of finite type",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01T4"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KZ"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian)",
+    "tag" : "",
+    "comment" : "Proposition 10.7"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "of finite type",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "of finite type",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "By definition"
+  },
+  {
+    "row" : "of finite type",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "open",
+    "column" : "base change",
+    "status" : "false"
+  },
+  {
+    "row" : "open",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  {
+    "row" : "open",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "open",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "open",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "open",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "open",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.49"
+  },
+
+  {
+    "row" : "open immersion",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01JY",
+    "comment" : "Proposition 4.32"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02V0",
+    "comment" : "Remark 3.47"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L3"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "cancellation",
+    "status" : "If $g$ is unramified",
+    "tag" : "",
+    "comment" : "Volume II"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "open immersion",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "open immersion",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 10.75"
+  },
+  {
+    "row" : "open immersion",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+
+  {
+    "row" : "projective",
+    "column" : "fpqc local",
+    "status" : "false",
+    "tag" : "08J0"
+  },
+  {
+    "row" : "projective",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02V6"
+  },
+  {
+    "row" : "projective",
+    "column" : "composition",
+    "status" : "If $Z$ is quasi-compact and quasi-separated",
+    "tag" : ""
+  },
+  {
+    "row" : "projective",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : "",
+    "comment" : "[EGAII] (5.5.5)"
+  },
+  {
+    "row" : "projective",
+    "column" : "local on the target",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "projective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "projective",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "projective",
+    "column" : "descent",
+    "status" : "false",
+    "tag" : ""
+  },
+
+  {
+    "row" : "proper",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L1"
+  },
+  {
+    "row" : "proper",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01W3"
+  },
+  {
+    "row" : "proper",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01W4"
+  },
+  {
+    "row" : "proper",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : "",
+    "comment" : "Proposition 12.58"
+  },
+  {
+    "row" : "proper",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "proper",
+    "column" : "local on the source",
+    "status" : "",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "proper",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "proper",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  }
+  {
+    "row" : "purely inseparable",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAInew] (3.7.6)"
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "purely inseparable",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAInew] (3.7.6)"
+  },
+
+  {
+    "row" : "quasi-affine",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02L7"
+  },
+ {
+    "row" : "quasi-affine",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01SO"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated",
+    "tag" : "",
+    "comment" : "[EGAII] (5.1.10)"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (2.7.1)"
+  },
+  {
+    "row" : "quasi-affine",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01SN"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KQ"
+  },
+   {
+    "row" : "quasi-compact",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01K5",
+    "comment" : "Proposition 10.3"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01K6"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian)",
+    "tag" : "",
+    "comment" : "Remark 10.4"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : ""
+    "comment" : "By definition"
+  },
+  {
+    "row" : "quasi-compact",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.49"
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "base change",
+    "status" : "If the base change $Y' -> Y$ is flat",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "local on the target",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact and dominant",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (2.6.4)"
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian): holds for
+        'quasi-compact' and 'immersion'",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact immerson",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "By definition"
+  },
+  {
+    "row" : "quasi-compact immersion",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.51"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01TL"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VI"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01TM"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated",
+    "tag" : "",
+    "comment" : "Proposition 12.17"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "quasi-finite",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Prospoition 14.51"
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "composition",
+    "status" : "If $Z$ is quasi-compact",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "cancellation",
+    "status" : "If $g$ is quasi-separated",
+    "tag" : "",
+    "comment" : "[EGAII] (5.3.4)"
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "local on the target",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "quasi-projective",
+    "column" : "descent",
+    "status" : "false",
+    "tag" : ""
+  },
+   {
+    "row" : "quasi-separated",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KR"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 10.25"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "quasi-separated",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.49"
+  },
+  {
+    "row" : "scheme-theoretically dominant",
+    "column" : "base change",
+    "status" : "false",
+    "comment" : "Not in book"
+  },
+
+  {
+    "row" : "separated",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "separated",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01KU"
+  },
+  {
+    "row" : "separated",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KU"
+  },
+  {
+    "row" : "separated",
+    "column" : "cancellation",
+    "status" : "",
+    "tag" : "",
+    "comment" : "Proposition 9.13"
+  },
+  {
+    "row" : "separated",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "separated",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "separated",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "separated",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Proposition 14.49"
+  },
+  {
+    "row" : "smooth",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01VB",
+    "comment" : "Proposition 6.15"
+  },
+  {
+    "row" : "smooth",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01VA"
+  },
+  {
+    "row" : "smooth",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VL"
+  },
+  {
+    "row" : "smooth",
+    "column" : "cancellation",
+    "status" : "If $g$ is unramified",
+    "tag" : "",
+    "comment" : "Volume II"
+  },
+  {
+    "row" : "smooth",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "smooth",
+    "column" : "local on the source",
+    "status" : "true",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "smooth",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (17.7.8)"
+  },
+  {
+    "row" : "smooth",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (17.7.3)"
+  },
+  {
+    "row" : "surjective",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KV"
+  },
+
+  {
+    "row" : "surjective",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01S1",
+    "comment" : "Proposition 4.32"
+  },
+  {
+    "row" : "surjective",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01S0"
+  },
+  {
+    "row" : "surjective",
+    "column" : "cancellation",
+    "status" : "If $g$ is injective",
+    "tag" : ""
+  },
+  {
+    "row" : "surjective",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "surjective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "surjective",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "surjective",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "syntomic",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01UH",
+    "comment" : "Not in book"
+  },
+
+   {
+    "row" : "syntomic",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01UI"
+  },
+  {
+    "row" : "syntomic",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VK"
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universally bijective",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 14.50"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KS"
+  },
+
+  {
+    "row" : "universally closed",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01KB"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "01W3"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "cancellation",
+    "status" : "If $g$ is separated",
+    "tag" : "",
+    "comment" : "Remark 9.11"
+  },
+  {
+    "row" : "universally closed",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally closed",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "universally closed",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universally closed",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 14.50"
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "base change",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "cancellation",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universal homeomorphism",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 14.50"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02V1",
+    "comment" : "See 'purely inseparable'"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KW"
+  },
+ {
+    "row" : "universally injective",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01S4"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "cancellation",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAInew] (3.7.6)"
+  },
+  {
+    "row" : "universally injective",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally injective",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "universally injective",
+    "column" : "IND",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAIV] (8.10.5)"
+  },
+  {
+    "row" : "universally injective,
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "[EGAInew] (3.7.6)"
+  },
+
+  {
+    "row" : "universally open",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "01U0"
+  },
+  {
+    "row" : "universally open",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02V2"
+  },
+  {
+    "row" : "universally open",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02KT"
+  },
+  {
+    "row" : "universally open",
+    "column" : "cancellation",
+    "status" : "If $g$ is unramified",
+    "tag" : "",
+    "comment" : "Volume II"
+  },
+  {
+    "row" : "universally open",
+    "column" : "local on the target",
+    "status" : "true",
+    "tag" : ""
+  },
+  {
+    "row" : "universally open",
+    "column" : "local on the source",
+    "status" : "false",
+    "tag" : "",
+    "comment" : ""
+  },
+  {
+    "row" : "universally open",
+    "column" : "IND",
+    "status" : "false",
+    "tag" : ""
+  },
+  {
+    "row" : "universally open",
+    "column" : "descent",
+    "status" : "true",
+    "tag" : "",
+    "comment" : "Remark 14.50"
+  },
+  {
+    "row" : "unramified",
+    "column" : "base change",
+    "status" : "arbitrary",
+    "tag" : "02GA",
+    "comment" : "Not in book"
+  },
+  {
+    "row" : "unramified",
+    "column" : "composition",
+    "status" : "true",
+    "tag" : "02G9"
+  },
+  {
+    "row" : "unramified",
+    "column" : "fpqc local",
+    "status" : "true",
+    "tag" : "02VM"
+  },
+
 ]

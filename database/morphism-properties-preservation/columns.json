@@ -1,5 +1,9 @@
 {
-  "arbitrary base change" : {},
+  "base change" : {},
   "composition" : {},
-  "fpqc local" : {}
+  "local on the source" : {},
+  "local on the target" : {},
+  "cancellation" : {},
+  "IND" : {},
+  "descent" : {},
 }
