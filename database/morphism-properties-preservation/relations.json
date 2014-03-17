@@ -1,38 +1,5 @@
 [
   {
-    "row" : "",
-    "column" : "cancellation",
-    "status" : "",
-    "tag" : ""
-  },
-  {
-    "row" : "",
-    "column" : "local on the target",
-    "status" : "",
-    "tag" : ""
-  },
-  {
-    "row" : "",
-    "column" : "local on the source",
-    "status" : "",
-    "tag" : "",
-    "comment" : ""
-  },
-  {
-    "row" : "",
-    "column" : "IND",
-    "status" : "",
-    "tag" : ""
-  },
-  {
-    "row" : "",
-    "column" : "descent",
-    "status" : "",
-    "tag" : ""
-  },
-
-
-  {
     "row" : "affine",
     "column" : "base change",
     "status" : "arbitrary",
@@ -53,7 +20,7 @@
   {
     "row" : "affine",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : ""
     "comment" : "Proposition 12.3"
   },
@@ -195,7 +162,7 @@
   {
     "row" : "closed immersion",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : ""
     "comment" : "Remark 9.11"
   },
@@ -255,7 +222,7 @@
   {
     "row" : "etale",
     "column" : "cancellation",
-    "status" : "If $g$ is unramified",
+    "status" : "unramified",
     "tag" : ""
     "comment" : "Volume II" 
   },
@@ -302,7 +269,7 @@
   {
     "row" : "faithfully flat",
     "column" : "cancellation",
-    "status" : "If $g$ is an opan immersion",
+    "status" : "open immersion",
     "tag" : ""
   },
   {
@@ -356,7 +323,7 @@
     {
     "row" : "finite",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : ""
   },
   {
@@ -463,7 +430,7 @@
   {
     "row" : "flat",
     "column" : "cancellation",
-    "status" : "If $g$ is unramified",
+    "status" : "unramified",
     "tag" : "",
     "comment" : "Volume II"
   },
@@ -621,7 +588,7 @@
   {
     "row" : "immersion",
     "column" : "descent",
-    "status" : "If $f'$ is quasi-compact",
+    "status" : "quasi-compact",
     "tag" : "",
     "comment" : "Proposition 14.51"
   },
@@ -690,7 +657,7 @@
   {
     "row" : "integral",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : ""
   },
   {
@@ -783,6 +750,12 @@
 
   {
     "row" : "local complete intersection",
+    "column" : "base change",
+    "status" : "flat",
+    "tag" : "069I",
+  },
+  {
+    "row" : "local complete intersection",
     "column" : "composition",
     "status" : "true",
     "tag" : "069J",
@@ -793,7 +766,7 @@
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "069N"
-  }
+  },
 
   {
     "row" : "locally of finite presentation",
@@ -817,7 +790,7 @@
     "row" : "locally of finite presentation
     "comment" : "",
     "column" : "cancellation",
-    "status" : "If $g$ is locally of finite type",
+    "status" : "locally of finite type",
     "tag" : "",
     "comment" : "Proposition 10.35"
   },
@@ -1015,7 +988,7 @@
   {
     "row" : "of finite presentation",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated and locally of finite type",
+    "status" : "quasi-separated and locally of finite type",
     "tag" : "",
     "comment" : "Proposition 10.35"
   },
@@ -1069,7 +1042,7 @@
   {
     "row" : "of finite type",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian)",
+    "status" : "quasi-separated",
     "tag" : "",
     "comment" : "Proposition 10.7"
   },
@@ -1167,7 +1140,7 @@
   {
     "row" : "open immersion",
     "column" : "cancellation",
-    "status" : "If $g$ is unramified",
+    "status" : "unramified",
     "tag" : "",
     "comment" : "Volume II"
   },
@@ -1214,13 +1187,13 @@
   {
     "row" : "projective",
     "column" : "composition",
-    "status" : "If $Z$ is quasi-compact and quasi-separated",
+    "status" : "",
     "tag" : ""
   },
   {
     "row" : "projective",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : "",
     "comment" : "[EGAII] (5.5.5)"
   },
@@ -1272,7 +1245,7 @@
   {
     "row" : "proper",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : "",
     "comment" : "Proposition 12.58"
   },
@@ -1314,7 +1287,7 @@
     "column" : "composition",
     "status" : "true",
     "tag" : ""
-  }
+  },
   {
     "row" : "purely inseparable",
     "column" : "cancellation",
@@ -1365,7 +1338,7 @@
   {
     "row" : "quasi-affine",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated",
+    "status" : "quasi-separated",
     "tag" : "",
     "comment" : "[EGAII] (5.1.10)"
   },
@@ -1424,7 +1397,7 @@
   {
     "row" : "quasi-compact",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian)",
+    "status" : "quasi-separated",
     "tag" : "",
     "comment" : "Remark 10.4"
   },
@@ -1458,7 +1431,7 @@
   {
     "row" : "quasi-compact and dominant",
     "column" : "base change",
-    "status" : "If the base change $Y' -> Y$ is flat",
+    "status" : "flat",
     "tag" : ""
   },
   {
@@ -1514,8 +1487,7 @@
   {
     "row" : "quasi-compact immersion",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated (e.g., if $Y$ is locally noetherian): holds for
-        'quasi-compact' and 'immersion'",
+    "status" : "quasi-separated",
     "tag" : ""
   },
   {
@@ -1566,7 +1538,7 @@
   {
     "row" : "quasi-finite",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated",
+    "status" : "quasi-separated",
     "tag" : "",
     "comment" : "Proposition 12.17"
   },
@@ -1606,13 +1578,13 @@
   {
     "row" : "quasi-projective",
     "column" : "composition",
-    "status" : "If $Z$ is quasi-compact",
+    "status" : "quasi-compact",
     "tag" : ""
   },
   {
     "row" : "quasi-projective",
     "column" : "cancellation",
-    "status" : "If $g$ is quasi-separated",
+    "status" : "quasi-separated",
     "tag" : "",
     "comment" : "[EGAII] (5.3.4)"
   },
@@ -1775,7 +1747,7 @@
   {
     "row" : "smooth",
     "column" : "cancellation",
-    "status" : "If $g$ is unramified",
+    "status" : "unramified",
     "tag" : "",
     "comment" : "Volume II"
   },
@@ -1829,7 +1801,7 @@
   {
     "row" : "surjective",
     "column" : "cancellation",
-    "status" : "If $g$ is injective",
+    "status" : "injective",
     "tag" : ""
   },
   {
@@ -1943,7 +1915,7 @@
   {
     "row" : "universally closed",
     "column" : "cancellation",
-    "status" : "If $g$ is separated",
+    "status" : "separated",
     "tag" : "",
     "comment" : "Remark 9.11"
   },
@@ -2092,7 +2064,7 @@
   {
     "row" : "universally open",
     "column" : "cancellation",
-    "status" : "If $g$ is unramified",
+    "status" : "unramified",
     "tag" : "",
     "comment" : "Volume II"
   },
