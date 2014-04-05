@@ -21,21 +21,21 @@
     "row" : "affine",
     "column" : "cancellation",
     "status" : "separated",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 12.3"
   },
  {
     "row" : "affine",
     "column" : "IND",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "[EGAIV] (8.10.5)"
   },
   {
     "row" : "affine",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 14.51"
   },
 
@@ -49,7 +49,7 @@
     "row" : "affine",
     "column" : "local on the source",
     "status" : "false",
-    "tag" : "",
+    "tag" : ""
   },
   {
     "row" : "bijective",
@@ -76,7 +76,7 @@
   },
   {
     "row" : "bijective",
-    "column" : "local on the source,
+    "column" : "local on the source",
     "status" : "false",
     "tag" : ""
   },
@@ -91,7 +91,7 @@
     "row" : "bijective",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 14.48"
   },
 
@@ -135,7 +135,7 @@
     "row" : "closed",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 14.49"
   },
 
@@ -143,14 +143,14 @@
     "row" : "closed immersion",
     "column" : "base change",
     "status" : "arbitrary",
-    "tag" : "01JY"
+    "tag" : "01JY",
     "comment" : "Proposition 4.32"
   },
   {
     "row" : "closed immersion",
     "column" : "composition",
     "status" : "true",
-    "tag" : "02V0"
+    "tag" : "02V0",
     "comment" : "Remark 3.47"
   },
   {
@@ -163,7 +163,7 @@
     "row" : "closed immersion",
     "column" : "cancellation",
     "status" : "separated",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Remark 9.11"
   },
   {
@@ -183,14 +183,14 @@
     "row" : "closed immersion",
     "column" : "IND",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 10.75"
   },
   {
     "row" : "closed immersion",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 14.51"
   },
 
@@ -223,7 +223,7 @@
     "row" : "etale",
     "column" : "cancellation",
     "status" : "unramified",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Volume II" 
   },
   {
@@ -243,14 +243,14 @@
     "row" : "etale",
     "column" : "IND",
     "status" : "",
-    "tag" : ""
+    "tag" : "",
     "comment" : "[EGAIV] (17.7.8)"
   },
   {
     "row" : "etale",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "[EGAIV] (17.7.3)"
   },
 
@@ -259,12 +259,12 @@
     "column" : "base change",
     "status" : "true",
     "tag" : "",
-    "comment" : "Remark 14.8",
+    "comment" : "Remark 14.8"
   },
   {
     "row" : "faithfully flat",
     "column" : "composition",
-    "status" : "true",
+    "status" : "true"
   },
   {
     "row" : "faithfully flat",
@@ -295,7 +295,7 @@
     "row" : "faithfully flat",
     "column" : "descent",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Corollary 14.12"
   },
 
@@ -343,14 +343,14 @@
     "row" : "finite",
     "column" : "IND",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 12.11"
   },
   {
     "row" : "finite",
     "column" : "descent",
     "status" : "",
-    "tag" : ""
+    "tag" : "",
     "comment" : "Proposition 14.51"
   },
 
@@ -403,15 +403,14 @@
     "column" : "descent",
     "status" : "",
     "tag" : "",
-    "comment" : "Follows from the permanence properties for 'finite','flat' and 'of finite
-        presentation'"
+    "comment" : "Follows from the permanence properties for 'finite','flat' and 'of finite presentation'"
   },
 
     {
     "row" : "flat",
     "column" : "base change",
     "status" : "arbitrary",
-    "tag" : "01U9"
+    "tag" : "01U9",
     "comment" : "Proposition 14.3"
   },
   {
@@ -506,6 +505,7 @@
     "column" : "composition",
     "status" : "true",
     "tag" : ""
+  },
   {
     "row" : "homeomorphism",
     "column" : "cancellation",
@@ -603,6 +603,7 @@
     "column" : "composition",
     "status" : "true",
     "tag" : ""
+  },
   {
     "row" : "injective",
     "column" : "cancellation",
@@ -752,7 +753,7 @@
     "row" : "local complete intersection",
     "column" : "base change",
     "status" : "flat",
-    "tag" : "069I",
+    "tag" : "069I"
   },
   {
     "row" : "local complete intersection",
@@ -772,7 +773,7 @@
     "row" : "locally of finite presentation",
     "column" : "base change",
     "status" : "arbitrary",
-    "tag" : "01TS",
+    "tag" : "01TS"
   },
   {
     "row" : "locally of finite presentation",
@@ -787,7 +788,7 @@
     "tag" : "02KY"
   },
   {
-    "row" : "locally of finite presentation
+    "row" : "locally of finite presentation",
     "comment" : "",
     "column" : "cancellation",
     "status" : "locally of finite type",
@@ -801,7 +802,7 @@
     "tag" : ""
   },
   {
-    "row" : "locally of finite presentation
+    "row" : "locally of finite presentation",
     "comment" : "",
     "column" : "local on the source",
     "status" : "true",
@@ -980,10 +981,6 @@
     "column" : "composition",
     "status" : "true",
     "tag" : "01TR"
-    "comment" : "
-
-    "comment" : "
-
   },
   {
     "row" : "of finite presentation",
@@ -1084,6 +1081,7 @@
     "column" : "composition",
     "status" : "true",
     "tag" : ""
+  },
   {
     "row" : "open",
     "column" : "cancellation",
@@ -1418,7 +1416,7 @@
     "row" : "quasi-compact",
     "column" : "IND",
     "status" : "true",
-    "tag" : ""
+    "tag" : "",
     "comment" : "By definition"
   },
   {
@@ -1491,7 +1489,7 @@
     "tag" : ""
   },
   {
-    "row" : "quasi-compact immerson",
+    "row" : "quasi-compact immersion",
     "column" : "local on the target",
     "status" : "true",
     "tag" : ""
@@ -2036,7 +2034,7 @@
     "comment" : "[EGAIV] (8.10.5)"
   },
   {
-    "row" : "universally injective,
+    "row" : "universally injective",
     "column" : "descent",
     "status" : "true",
     "tag" : "",
@@ -2112,6 +2110,5 @@
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02VM"
-  },
-
+  }
 ]
