@@ -158,7 +158,8 @@ class ComparisonTable {
         $output .= "?";
         break;
       default:
-        exit("should not happen"); # TODO improve
+	$output .= $relation["status"];
+        //exit("should not happen"); # TODO improve
     }
 
     // if the tag is not empty we make the symbol clickable
