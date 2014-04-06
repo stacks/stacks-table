@@ -37,9 +37,6 @@ td {
 th a,
 td a {
   text-decoration: none;
-}
-
-tbody td a {
   display: block;
 }
 
@@ -68,7 +65,7 @@ td.unknown:hover {
   background-color: rgba(65, 105, 225, 0.2);
 }
 
-th[data-tag],
+th[data-tag] a,
 td[data-tag] a {
   background-image: url('/~pbelmans/stacks-table/stacks-transparent-gray.png');
   background-repeat: no-repeat;
@@ -83,7 +80,8 @@ div.tooltip {
   border: 1px solid #d9d8d1;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
+  width: 500px;
 }
 
 form.selector label {
