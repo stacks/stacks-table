@@ -38,7 +38,7 @@ class ComparisonTable {
     $output .= "<thead>";
     $output .= "<tr>";
     // empty table cell
-    $output .= "<td></td>";
+    $output .= "<th></th>";
 
     $columns = $this->getColumnHeaders();
     foreach ($columns as $column) {

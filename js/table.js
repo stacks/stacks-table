@@ -5,6 +5,6 @@ $(document).ready(function() {
     var column = $(table).find("th[data-name='" + e.target.value + "']")[0];
     var index = $(table).find("thead tr *").index(column) + 1;
 
-    $(table).find("td:nth-child(" + index + "), th:nth-child(" + index + ")").toggle(500);
+    $(table).find("td:nth-child(" + index + "), th:nth-child(" + index + ")").toggle(0);
   });
 });

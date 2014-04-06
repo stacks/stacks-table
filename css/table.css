@@ -13,8 +13,8 @@ table a {
 thead th, thead td {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
-  padding: .3em .5em;
-  width: 8em;
+  padding: .3em 0;
+  width: 9em;
   background-color: white;
 }
 
@@ -24,7 +24,6 @@ tbody tr:last-child th, tbody tr:last-child td {
 
 tbody th {
   padding: .2em 0;
-  width: 12em;
 }
 
 tbody td {
