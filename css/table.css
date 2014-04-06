@@ -44,28 +44,28 @@ tbody td a {
 }
 
 td.true {
-  background-color: #66c285;
+  background-color: rgba(143, 188, 143, 0.5);
 }
 
 td.true:hover {
-  background-color: #75d295;
+  background-color: rgba(143, 188, 143, 0.3);
 }
 
 td.false {
-  background-color: #e08566;
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 td.false:hover {
-  background-color: #f09576;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 td.unknown {
   font-weight: bold;
-  background-color: rgba(0, 0, 255, .3);
+  background-color: rgba(65, 105, 225, 0.3);
 }
 
 td.unknown:hover {
-  background-color: rgba(0, 0, 255, .2);
+  background-color: rgba(65, 105, 225, 0.2);
 }
 
 td[data-tag] a {
