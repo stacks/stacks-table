@@ -65,7 +65,6 @@ class ComparisonTable {
 
       $output .= "</tr>";
     }
-    $output .= "</thead>";
     $output .= "</tbody>";
 
     $output .= "</table>";
@@ -173,7 +172,7 @@ class ComparisonTable {
         $output .= "?";
         break;
       default:
-	$output .= $relation["status"];
+        $output .= $relation["status"];
         //exit("should not happen"); # TODO improve
     }
 

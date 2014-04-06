@@ -20,6 +20,7 @@ catch(PDOException $e) {
 <!DOCTYPE html>
 <html>
 <head>
+<title>Tables for the Stacks project</title>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
@@ -90,10 +91,10 @@ print $table->outputTable();
 //$table = new ComparisonTable($database, "derived-categories-preservation");
 //print $table->outputTable();
 ?>
-</body>
 
 <script type="text/javascript">
 $("table").floatThead();
 </script>
+</body>
 </html>
 
