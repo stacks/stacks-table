@@ -68,6 +68,7 @@ td.unknown:hover {
   background-color: rgba(65, 105, 225, 0.2);
 }
 
+th[data-tag],
 td[data-tag] a {
   background-image: url('/~pbelmans/stacks-table/stacks-transparent-gray.png');
   background-repeat: no-repeat;
