@@ -20,8 +20,8 @@ tables = ["rows.sql", "columns.sql", "relations.sql"]
 tables = tables + [prefix + "/fields.sql"] # this file will contain the extra fields
 
 # TODO check existence of the tables, not of the .sqlite file
-#if os.path.isfile("properties.sqlite"):
-#  print "The file properties.sqlite already exists in this folder, aborting"
+#if os.path.isfile(database):
+#  print "The file", database, "already exists in this folder, aborting"
 #  sys.exit()
 
 print "Creating the tables with prefix '" + prefix + "' in '" + database + "'"

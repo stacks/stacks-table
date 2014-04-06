@@ -1,0 +1,328 @@
+[
+{
+    "source" : "isomorphism",
+    "target" : "faithfully flat + qc",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "isomorphism",
+    "target" : "open immersion",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "isomorphism",
+    "target" : "universally homeom. + ft = purely insep. + finite + surjective",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "isomorphism",
+    "target" : "closed immersion = proper monomorphism",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "faithfully flat + qc",
+    "target" : "faithfully flat",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "faithfully flat + qc",
+    "target" : "univ. submersive",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "open immersion",
+    "target" : "etale",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "open immersion",
+    "target" : "immersion",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "open immersion",
+    "target" : "qc immersion",
+    "tag" : "",
+    "comment" : "X noeth [dotted line]"
+},
+{
+    "source" : "universally homeom. + ft = purely insep. + finite + surjective",
+    "target" : "universally homeom.",
+    "tag" : "",
+    "comment" : ""
+},
+    {
+    "source" : "universally homeom. + ft = purely insep. + finite + surjective",
+    "target" : "finite = quasi-affine + proper",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "closed immersion = proper monomorphism",
+    "target" : "qc immersion",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "closed immersion = proper monomorphism",
+    "target" : "finite = quasi-affine + proper",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "etale",
+    "target" : "smooth",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "univ. homeom.",
+    "target" : "univ. submersive",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "univ. homeom.",
+    "target" : "univ. open",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "univ. homeom.",
+    "target" : "purely insep.",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "qc immersion",
+    "target" : "immersion",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "qc immersion",
+    "target" : "quasi-finite + separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "finite = quasi-affine + proper",
+    "target" : "integral = affine + univ. closed",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "finite = quasi-affine + proper",
+    "target" : "quasi-finite + separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "finite = quasi-affine + proper",
+    "target" : "projective",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "faithfully flat",
+    "target" : "flat",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "faithfully flat",
+    "target" : "surjective",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "univ. submersive",
+    "target" : "surjective",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "smooth",
+    "target" : "flat + lfp",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "immersion",
+    "target" : "monomorphism",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "flat + lfp",
+    "target" : "flat",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "flat + lfp",
+    "target" : "univ. open",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "monomorphism",
+    "target" : "purely insep.",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "purely insep.",
+    "target" : "separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "integral = affine + univ. closed",
+    "target" : "affine",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "integral = affine + univ. closed",
+    "target" : "univ. closed",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "affine",
+    "target" : "quasi-affine",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "quasi-affine",
+    "target" : "separated + qc",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "separated + qc",
+    "target" : "separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "separated",
+    "target" : "quasi-separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "separated + qc",
+    "target" : "qcqs",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "qcqs",
+    "target" : "qc",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "qcqs",
+    "target" : "quasi-separated",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "quasi-finite + separated",
+    "target" : "quasi-affine + ft",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "quasi-affine + ft",
+    "target" : "quasi-affine",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "quasi-affine + ft",
+    "target" : "quasi-proj.",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "projective",
+    "target" : "proper + quasi-proj.",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "proper + quasi-proj.",
+    "target" : "projective",
+    "tag" : "",
+    "comment" : "Y qcqs [dotted line]"
+},
+{
+    "source" : "proper + quasi-proj.",
+    "target" : "proper",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "proper + quasi-proj.",
+    "target" : "quasi-proj.",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "proper",
+    "target" : "separated + qc",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "proper",
+    "target" : "univ. closed",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "proper",
+    "target" : "ft",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "quasi-proj.",
+    "target" : "ft",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "fp",
+    "target" : "ft",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "fp",
+    "target" : "qcqs",
+    "tag" : "",
+    "comment" : ""
+},
+{
+    "source" : "ft",
+    "target" : "qc",
+    "tag" : "",
+    "comment" : ""
+},
+
+
+]

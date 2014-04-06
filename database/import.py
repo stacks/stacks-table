@@ -149,8 +149,8 @@ def columnExists(name):
 
 # check whether a relation exists in the database
 def relationExists(rowName, columnName):
-  assert rowExists(rowName)
-  assert columnExists(columnName)
+  assert rowExists(rowName), rowName
+  assert columnExists(columnName), columnName
 
   rowID = getRowByName(rowName)[0]
   columnID = getColumnByName(columnName)[0]
@@ -221,7 +221,7 @@ def importRelations():
       createRelation(relation["row"], relation["column"])
 
     for field in relation.keys():
-      if field not in ["column", "row"]:
+      if field not in ["column", "row", "comment"]:
         updateField("relations", (relation["row"], relation["column"]), field, relation[field])
 
 # actual execution code
