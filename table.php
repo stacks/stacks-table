@@ -187,10 +187,16 @@ class ComparisonTable {
   protected function printMarkCell($relation) {
     $output = "";
 
-    if (!empty($relation["tag"]))
-      $output .= "<td class='" . $relation["status"] . "' data-tag='" . StacksLinks::tag($relation["tag"]) . "'>";
+    // turn non-standard status into true
+    if (in_array($relation["status"], array("true", "false", "unknown")))
+      $class = $relation["status"];
     else
-      $output .= "<td class='" . $relation["status"] . "'>";
+      $class = "true";
+
+    if (!empty($relation["tag"]))
+      $output .= "<td class='" . $class . "' data-tag='" . StacksLinks::tag($relation["tag"]) . "'>";
+    else
+      $output .= "<td class='" . $class . "'>";
 
     $output .= $this->printMark($relation) . "</td>"; // TODO change this to static again but I don't know syntax to call static functions in the same class...
 
