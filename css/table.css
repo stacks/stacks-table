@@ -9,11 +9,14 @@ table a {
   color: black;
 }
 
+th, td {
+  width: 6em;
+}
+
 thead th, thead td {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
   padding: .3em 0;
-  width: 6em;
   background-color: white;
 }
 
@@ -27,7 +30,6 @@ tbody th {
 
 tbody td {
   border: 1px solid white;
-  width: 6em;
 }
 
 td {

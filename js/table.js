@@ -6,5 +6,7 @@ $(document).ready(function() {
     var index = $(table).find("thead tr *").index(column) + 1;
 
     $(table).find("td:nth-child(" + index + "), th:nth-child(" + index + ")").toggle(0);
+
+    $("table").floatThead("reflow");
   });
 });
