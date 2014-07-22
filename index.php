@@ -91,7 +91,7 @@ $table = new MorphismPropertiesPreservationTable($database);
 print $table->outputSelector();
 print $table->outputTable();
 ?>
-<h1>Stability of properties of objects in derived categories</h1>
+<h2>Stability of properties of objects in derived categories</h2>
 <?php
 //$table = new ComparisonTable($database, "derived-categories-preservation");
 //print $table->outputTable();

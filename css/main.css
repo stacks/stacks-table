@@ -41,3 +41,17 @@ h1 a {
   height: 100%;
 }
 
+h2 {
+  font-size: 120%;
+  display: block;
+  padding: 6px 8px;
+  font-weight: bold;
+  background-color: #edece6;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+h2:hover {
+  background-color: #c9c8c1;
+}
