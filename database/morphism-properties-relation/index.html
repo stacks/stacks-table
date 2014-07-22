@@ -24,6 +24,31 @@ circle {
   stroke-width: 1.5px;
 }
 
+circle.inactive {
+  fill: #ddd;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+circle.active {
+  fill: yellow;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+circle.incoming {
+  fill: red;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+circle.outgoing {
+  fill: green;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+
 text {
   font: 10px sans-serif;
   pointer-events: none;
@@ -32,7 +57,7 @@ text {
   </style>
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
 
   <script type="text/javascript">
     $.getJSON("http://localhost/~pbelmans/stacks-table/database/morphism-properties-relation/relations.json", function(data) { 
@@ -95,7 +120,32 @@ text {
           .data(force.nodes())
         .enter().append("circle")
           .attr("r", 6)
-          .call(force.drag);
+          .call(force.drag)
+          .on("mouseover", highlightRelated);
+
+      d3.select("svg").selectAll("circle").data(nodes);
+
+      //$("circle").mouseover(highlightRelated);
+      $("circle").mouseout(backToNormal);
+
+      function highlightRelated(node) {
+
+        $("circle").attr("class", "inactive");
+        $("circle:nth-child(" + (node.index + 1) + ")").attr("class", "active");
+
+        // loop over links and see which ones are close
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].source.name == node.name)
+            $("circle:nth-child(" + (links[i].target.index + 1) + ")").attr("class", "outgoing");
+          if (links[i].target.name == node.name)
+            $("circle:nth-child(" + (links[i].source.index + 1) + ")").attr("class", "incoming");
+        }
+      }
+
+      function backToNormal(node) {
+        console.log("normal");
+        $("circle").attr("class", "");
+      }
       
       var text = svg.append("g").selectAll("text")
           .data(force.nodes())
