@@ -48,6 +48,18 @@ circle.outgoing {
   stroke-width: 1.5px;
 }
 
+text.inactive {
+  fill: #eee;
+  z-index: 2;
+}
+
+text.incoming,
+text.outgoing,
+text.active {
+  fill: black;
+  z-index: 1;
+}
+
 
 text {
   font: 10px sans-serif;
@@ -128,23 +140,43 @@ text {
       //$("circle").mouseover(highlightRelated);
       $("circle").mouseout(backToNormal);
 
-      function highlightRelated(node) {
+      function floodOutgoing(nodeName) {
+        console.log(nodeName);
 
-        $("circle").attr("class", "inactive");
-        $("circle:nth-child(" + (node.index + 1) + ")").attr("class", "active");
-
-        // loop over links and see which ones are close
         for (var i = 0; i < links.length; i++) {
-          if (links[i].source.name == node.name)
+          if (links[i].source.name == nodeName) {
+            $("text:nth-child(" + (links[i].target.index + 1) + ")").attr("class", "outgoing");
             $("circle:nth-child(" + (links[i].target.index + 1) + ")").attr("class", "outgoing");
-          if (links[i].target.name == node.name)
-            $("circle:nth-child(" + (links[i].source.index + 1) + ")").attr("class", "incoming");
+            floodOutgoing(links[i].target.name);
+          }
         }
+      }
+
+      function floodIncoming(nodeName) {
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].target.name == nodeName) {
+            $("text:nth-child(" + (links[i].source.index + 1) + ")").attr("class", "incoming");
+            $("circle:nth-child(" + (links[i].source.index + 1) + ")").attr("class", "incoming");
+            floodIncoming(links[i].source.name);
+          }
+        }
+      }
+
+      function highlightRelated(node) {
+        $("circle").attr("class", "inactive");
+        $("text").attr("class", "inactive");
+
+        $("circle:nth-child(" + (node.index + 1) + ")").attr("class", "active");
+        $("text:nth-child(" + (node.index + 1) + ")").attr("class", "active");
+
+        floodOutgoing(node.name);
+        floodIncoming(node.name);
       }
 
       function backToNormal(node) {
         console.log("normal");
         $("circle").attr("class", "");
+        $("text").attr("class", "");
       }
       
       var text = svg.append("g").selectAll("text")
