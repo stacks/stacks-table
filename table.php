@@ -110,9 +110,13 @@ class ComparisonTable {
   // get the elements in the row headers
   private function getRowHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "] ORDER BY name");
-    if ($sql->execute())
-      return $sql->fetchAll();
+    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "]");
+    if ($sql->execute()) {
+      $rows = $sql->fetchAll();
+      usort($rows, function($a, $b) { return strcasecmp(str_replace("é", "e", $a["name"]), str_replace("é", "e", $b["name"])); });
+
+      return $rows;
+    }
 
     return array();
   }
