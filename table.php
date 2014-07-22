@@ -17,7 +17,6 @@ class ComparisonTable {
   public function outputSelector() {
     $output = "";
 
-    $output .= "<h2>Select the columns</h2>";
     $output .= "<form class='selector' id='" . $this->tablePrefix . "-selector'>";
 
     $columns = $this->getColumnHeaders();
@@ -213,9 +212,9 @@ class ComparisonTable {
     $output = "";
 
     if (!empty($row["tag"]))
-      $output .= "<th data-tag='" . $row["tag"] . "'><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
+      $output .= "<th data-tag='" . $row["tag"] . "' data-name='" . $row["name"] . "'><a href='" . StacksLinks::tag($row["tag"]) . "'>" . $row["name"] . "</a></th>";
     else
-      $output .= "<th>" . $row["name"] . "</th>";
+      $output .= "<th data-name='" . $row["name"] . "'>" . $row["name"] . "</th>";
 
     return $output;
   }
