@@ -70,7 +70,7 @@ td.unknown:hover {
 
 th[data-tag] a,
 td[data-tag] a {
-  background-image: url('/~pbelmans/stacks-table/stacks-transparent-gray.png');
+  background-image: url('../images/stacks-transparent-gray.png');
   background-repeat: no-repeat;
   background-position: center right;
   min-height: 16px;
