@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+  font-family: "Droid Sans", Arial, sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+div#wrapper {
+  display: inline-block;
+  border: solid #d9d8d1;
+  border-width: 1px;
+  margin-bottom: 4em;
+  background-color: #fff;
+}
+
+h1 {
+  background-image: url('../images/stacks.png');
+  background-repeat: no-repeat;
+  background-position: .25em center;
+  background-size: 1.4em;
+  height: 1.4em;
+  margin: 0;
+  padding: .2em;
+  font-size: 1.35em;
+  font-weight: bold;
+  background-color: #d9d8d1;
+}
+
+h1:hover {
+  background-color: #c9c8c1;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-left: 1.8em;
+  padding-top: .1em;
+  height: 100%;
+}
+

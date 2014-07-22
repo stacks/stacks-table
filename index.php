@@ -41,6 +41,7 @@ catch(PDOException $e) {
 </script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/table.css">
 <link rel="stylesheet" type="text/css" href="http://stacks.math.columbia.edu/css/tag.css">
 
@@ -81,8 +82,10 @@ $(document).ready(function() {
 </head>
 
 <body>
+<div id="wrapper">
+<h1><a href="http://stacks.math.columbia.edu">The Stacks project tables</a></h1>
 
-<h1>Stability of properties of morphisms</h1>
+<h2>Stability of properties of morphisms</h2>
 <?php
 $table = new MorphismPropertiesPreservationTable($database);
 print $table->outputSelector();
@@ -97,6 +100,7 @@ print $table->outputTable();
 <script type="text/javascript">
 $("table").floatThead();
 </script>
+</div>
 </body>
 </html>
 
