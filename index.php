@@ -26,20 +26,16 @@ catch(PDOException $e) {
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
-<script type="text/x-mathjax-config">
+<script type='text/x-mathjax-config'>
   MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-      processEscapes: true,
-    },
-    "HTML-CSS": { availableFonts: ["TeX"], webFont: "Gyre-Pagella" },
-    displayAlign: "left"
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {extensions: ['http://sonoisa.github.io/xyjax_ext/xypic.js', 'AMSmath.js', 'AMSsymbols.js'], TagSide: 'left'}, // TODO fix this: once cpw is updated to the latest version of XyJax
+    tex2jax: {inlineMath: [['$','$']]},
+    'HTML-CSS': { scale: 85 }
   });
 </script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/table.css">
