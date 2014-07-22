@@ -17,6 +17,7 @@ class ComparisonTable {
   public function outputSelector() {
     $output = "";
 
+    $output .= "<h2>Select the columns</h2>";
     $output .= "<form class='selector' id='" . $this->tablePrefix . "-selector'>";
 
     $columns = $this->getColumnHeaders();

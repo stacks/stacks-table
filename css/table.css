@@ -88,6 +88,10 @@ div.tooltip {
   width: 500px;
 }
 
+form.selector {
+  width: 780px;
+}
+
 form.selector label {
   display: inline-block;
   width: 200px;
