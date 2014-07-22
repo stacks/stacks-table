@@ -13,17 +13,33 @@ class ComparisonTable {
     $this->tablePrefix = $tablePrefix;
   }
 
+  // this function returns a selector for comments (this doesn't make sense without the table)
+  public function outputSelector() {
+    $output = "";
+
+    $output .= "<h2>Select the columns</h2>";
+    $output .= "<form class='selector' id='" . $this->tablePrefix . "-selector'>";
+
+    $columns = $this->getColumnHeaders();
+    foreach ($columns as $column)
+      $output .= "<label><input type='checkbox' checked value='" . $column["name"] . "'>" . $column["name"] . "</label>";
+
+    $output .= "</form>";
+
+    return $output;
+  }
+
   // this function returns the whole table (TODO would __toString be reasonable for this?)
   public function outputTable() {
     $output = "";
 
-    $output .= "<table>";
+    $output .= "<table id='" . $this->tablePrefix . "-table'>";
 
     // header of the table
     $output .= "<thead>";
     $output .= "<tr>";
     // empty table cell
-    $output .= "<td></td>";
+    $output .= "<th></th>";
 
     $columns = $this->getColumnHeaders();
     foreach ($columns as $column) {
@@ -50,7 +66,6 @@ class ComparisonTable {
 
       $output .= "</tr>";
     }
-    $output .= "</thead>";
     $output .= "</tbody>";
 
     $output .= "</table>";
@@ -61,7 +76,7 @@ class ComparisonTable {
   // output a column header
   protected function outputColumnHeader($column) {
     // this is the default, no frills
-    return "<th>" . $column["name"] . "</th>";
+    return "<th data-name='" . $column["name"] . "'>" . $column["name"] . "</th>";
   }
 
   protected function outputRelation($relation) {
@@ -95,9 +110,13 @@ class ComparisonTable {
   // get the elements in the row headers
   private function getRowHeaders() {
     // TODO caching this hardly seems worth the effort?
-    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "] ORDER BY name");
-    if ($sql->execute())
-      return $sql->fetchAll();
+    $sql = $this->database->prepare("SELECT * FROM [" . $this->getTablename("rows") . "]");
+    if ($sql->execute()) {
+      $rows = $sql->fetchAll();
+      usort($rows, function($a, $b) { return strcasecmp(str_replace("é", "e", $a["name"]), str_replace("é", "e", $b["name"])); });
+
+      return $rows;
+    }
 
     return array();
   }
@@ -158,7 +177,7 @@ class ComparisonTable {
         $output .= "?";
         break;
       default:
-	$output .= $relation["status"];
+        $output .= $relation["status"];
         //exit("should not happen"); # TODO improve
     }
 
@@ -173,10 +192,16 @@ class ComparisonTable {
   protected function printMarkCell($relation) {
     $output = "";
 
-    if (!empty($relation["tag"]))
-      $output .= "<td class='" . $relation["status"] . "' data-tag='" . StacksLinks::tag($relation["tag"]) . "'>";
+    // turn non-standard status into true
+    if (in_array($relation["status"], array("true", "false", "unknown")))
+      $class = $relation["status"];
     else
-      $output .= "<td class='" . $relation["status"] . "'>";
+      $class = "true";
+
+    if (!empty($relation["tag"]))
+      $output .= "<td class='" . $class . "' data-tag='" . StacksLinks::tag($relation["tag"]) . "'>";
+    else
+      $output .= "<td class='" . $class . "'>";
 
     $output .= $this->printMark($relation) . "</td>"; // TODO change this to static again but I don't know syntax to call static functions in the same class...
 

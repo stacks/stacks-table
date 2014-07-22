@@ -1,3 +1,6 @@
+body {
+}
+
 table {
   border-collapse: collapse;
 }
@@ -6,11 +9,14 @@ table a {
   color: black;
 }
 
+th, td {
+  width: 6em;
+}
+
 thead th, thead td {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
-  padding: .3em .5em;
-  width: 8em;
+  padding: .3em 0;
   background-color: white;
 }
 
@@ -25,7 +31,6 @@ tbody th {
 
 tbody td {
   border: 1px solid white;
-  width: 9em;
 }
 
 td {
@@ -35,43 +40,42 @@ td {
 th a,
 td a {
   text-decoration: none;
-}
-
-tbody td a {
   display: block;
 }
 
 td.true {
-  background-color: #66c285;
+  background-color: rgba(143, 188, 143, 0.5);
 }
 
 td.true:hover {
-  background-color: #75d295;
+  background-color: rgba(143, 188, 143, 0.3);
 }
 
 td.false {
-  background-color: #e08566;
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 td.false:hover {
-  background-color: #f09576;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 td.unknown {
   font-weight: bold;
-  background-color: rgba(0, 0, 255, .3);
+  background-color: rgba(65, 105, 225, 0.3);
 }
 
 td.unknown:hover {
-  background-color: rgba(0, 0, 255, .2);
+  background-color: rgba(65, 105, 225, 0.2);
 }
 
+th[data-tag] a,
 td[data-tag] a {
   background-image: url('/~pbelmans/stacks-table/stacks-transparent-gray.png');
   background-repeat: no-repeat;
   background-position: center right;
   min-height: 16px;
   background-size: 16px;
+  padding-right: 16px;
 }
 
 div.tooltip {
@@ -80,5 +84,16 @@ div.tooltip {
   border: 1px solid #d9d8d1;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .9);
+  width: 500px;
+}
+
+form.selector {
+  width: 780px;
+}
+
+form.selector label {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
 }

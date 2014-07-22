@@ -20,8 +20,12 @@ catch(PDOException $e) {
 <!DOCTYPE html>
 <html>
 <head>
+<title>Tables for the Stacks project</title>
+<meta charset="utf-8">
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -81,6 +85,7 @@ $(document).ready(function() {
 <h1>Stability of properties of morphisms</h1>
 <?php
 $table = new MorphismPropertiesPreservationTable($database);
+print $table->outputSelector();
 print $table->outputTable();
 ?>
 <h1>Stability of properties of objects in derived categories</h1>
@@ -88,9 +93,10 @@ print $table->outputTable();
 //$table = new ComparisonTable($database, "derived-categories-preservation");
 //print $table->outputTable();
 ?>
-</body>
+
 <script type="text/javascript">
 $("table").floatThead();
 </script>
+</body>
 </html>
 
