@@ -176,16 +176,16 @@ def updateField(table, key, field, value):
     rowID = getRowByName(key[0])[0]
     columnID = getColumnByName(key[1])[0]
 
-    query = "UPDATE [" + prefix + "-relations] SET " + field + "='" + value + "' WHERE row = ? AND column = ?"
-    connection.execute(query, (rowID, columnID))
+    query = "UPDATE [" + prefix + "-relations] SET " + field + "=? WHERE row = ? AND column = ?"
+    connection.execute(query, (value, rowID, columnID))
   else:
     if table == "columns":
       assert columnExists(key)
     else:
       assert rowExists(key)
 
-    query = "UPDATE [" + prefix + "-" + table + "] SET " + field + "='" + value + "' WHERE name = ?"
-    connection.execute(query, (key,))
+    query = "UPDATE [" + prefix + "-" + table + "] SET " + field + "=? WHERE name = ?"
+    connection.execute(query, (value, key,))
 
 # import rows from the JSON file
 def importRows():
