@@ -69,9 +69,39 @@ function toggleTooltip() {
     $("div#tooltip-" + tag).toggle();
 };
 
+// toggle the tooltip (fired by a JQuery event)
+function toggleTooltipCustom() { // TODO better name, or better approach to this
+  var text = $(this).data("text");
+
+  // the tooltip doesn't exist yet, hence we create it
+  var id = "tooltip-" + $(this).data("name");
+  id = id.replace(/ /g, "-");
+
+  if ($("div#" + id).length == 0) {
+    // create the element
+    $("body").append($("<div class='tooltip' id='" + id + "'></div>"));
+
+    // create the blockquote containing the tag
+    $("div#" + id).append($("<blockquote class='rendered'></blockquote>"));
+    // load the HTML from the proxy script
+    $("div#" + id + " blockquote").text(text, function() {
+      // render math once the text has been loaded
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub, id]);
+    });
+  }
+  // otherwise we can just toggle its visibility
+  else
+    $("div#" + id).toggle();
+};
+
 $(document).ready(function() {
   // hovering over a property shows its definition
   $("th[data-tag]").hover(toggleTooltip);
+});
+
+$(document).ready(function() {
+  // hovering over a property shows its definition
+  $("th[data-text]").hover(toggleTooltipCustom);
 });
 </script>
 

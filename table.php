@@ -243,7 +243,14 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
   }
 
   protected function outputColumnHeader($row) {
-    return parent::printDefinition($row);
+    $output = "";
+
+    if (!empty($row["text"]))
+      $output .= "<th data-text='" . $row["text"] . "' data-name='" . $row["name"] . "'>" . $row["name"] . "</th>";
+    else
+      $output .= "<th data-name='" . $row["name"] . "'>" . $row["name"] . "</th>";
+
+    return $output;
   }
 
   protected function outputRowHeader($row) {
