@@ -21,6 +21,8 @@ catch(PDOException $e) {
 <html>
 <head>
 <title>Tables for the Stacks project</title>
+<meta charset="utf-8">
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
