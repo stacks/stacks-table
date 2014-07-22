@@ -84,10 +84,8 @@ function toggleTooltipCustom() { // TODO better name, or better approach to this
     // create the blockquote containing the tag
     $("div#" + id).append($("<blockquote class='rendered'></blockquote>"));
     // load the HTML from the proxy script
-    $("div#" + id + " blockquote").text(text, function() {
-      // render math once the text has been loaded
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub, id]);
-    });
+    $("div#" + id + " blockquote").text(text);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, id]);
   }
   // otherwise we can just toggle its visibility
   else
