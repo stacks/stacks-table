@@ -243,6 +243,10 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
     return $output;
   }
 
+  protected function outputColumnHeader($row) {
+    return parent::printDefinition($row);
+  }
+
   protected function outputRowHeader($row) {
     return parent::printDefinition($row);
   }

@@ -1,8 +1,8 @@
 {
   "base change" : {},
   "composition" : {},
-  "local on the source" : {},
-  "local on the target" : {},
+  "local on the source" : { "tag": "036G" },
+  "local on the target" : { "tag": "02KO" },
   "cancellation" : {},
   "IND" : {},
   "fpqc local" : {},
