@@ -202,52 +202,52 @@
   },
 
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "composition",
     "status" : "true",
     "tag" : "02GN"
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "base change",
     "status" : "arbitrary",
     "tag" : "02GO"
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "fpqc local",
     "status" : "true",
     "tag" : "02VN"
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "cancellation",
     "status" : "unramified",
     "tag" : "",
     "comment" : "Volume II" 
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "local on the target",
     "status" : "true",
     "tag" : ""
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "local on the source",
     "status" : "true",
     "tag" : "",
     "comment" : ""
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "IND",
     "status" : "",
     "tag" : "",
     "comment" : "[EGAIV] (17.7.8)"
   },
   {
-    "row" : "etale",
+    "row" : "étale",
     "column" : "descent",
     "status" : "true",
     "tag" : "",
