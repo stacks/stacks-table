@@ -233,7 +233,7 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
 
   protected function outputRelation($relation) {
     $output = "";
-    
+
     if (empty($relation)) // empty string implies that there is no relation in the database
       $output .= "<td></td>";
     else
@@ -263,7 +263,7 @@ class MorphismPropertiesPreservationTable extends ComparisonTable {
  */
 class StacksLinks {
   public static function tag($tag) {
-    return "http://stacks.math.columbia.edu/tag/" . $tag;
+    return "https://stacks.math.columbia.edu/tag/" . $tag;
   }
 }
 

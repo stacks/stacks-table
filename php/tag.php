@@ -6,5 +6,5 @@ function isValidTag($tag) {
 }
 
 if (isValidTag($_GET["tag"]))
-  print file_get_contents("http://stacks.math.columbia.edu/data/tag/" . $_GET["tag"] . "/content/statement");
+  print file_get_contents("https://stacks.math.columbia.edu/data/tag/" . $_GET["tag"] . "/content/statement");
 ?>

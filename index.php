@@ -23,23 +23,23 @@ catch(PDOException $e) {
 <title>Tables for the Stacks project</title>
 <meta charset="utf-8">
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/floatHead/dist/jquery.floatThead.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
 <script type='text/x-mathjax-config'>
   MathJax.Hub.Config({
     extensions: ['tex2jax.js'],
     jax: ['input/TeX','output/HTML-CSS'],
-    TeX: {extensions: ['http://sonoisa.github.io/xyjax_ext/xypic.js', 'AMSmath.js', 'AMSsymbols.js'], TagSide: 'left'}, // TODO fix this: once cpw is updated to the latest version of XyJax
+    TeX: {extensions: ['https://sonoisa.github.io/xyjax_ext/xypic.js', 'AMSmath.js', 'AMSsymbols.js'], TagSide: 'left'}, // TODO fix this: once cpw is updated to the latest version of XyJax
     tex2jax: {inlineMath: [['$','$']]},
     'HTML-CSS': { scale: 85 }
   });
 </script>
-<script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js'></script>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/table.css">
-<link rel="stylesheet" type="text/css" href="http://stacks.math.columbia.edu/css/tag.css">
+<link rel="stylesheet" type="text/css" href="https://stacks.math.columbia.edu/css/tag.css">
 
 <script type="text/javascript">
 // keep track of the location of the mouse and change the position of the tooltips
@@ -107,7 +107,7 @@ $(document).ready(function() {
 
 <body>
 <div id="wrapper">
-<h1><a href="http://stacks.math.columbia.edu">The Stacks project tables</a></h1>
+<h1><a href="https://stacks.math.columbia.edu">The Stacks project tables</a></h1>
 
 <h2>Stability of properties of morphisms</h2>
 <?php
